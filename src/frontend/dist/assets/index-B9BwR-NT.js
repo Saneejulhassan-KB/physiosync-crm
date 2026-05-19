@@ -34413,11 +34413,12 @@ const NAV_ITEMS = {
   ],
   sales: [
     { icon: LayoutDashboard, label: "Dashboard", href: "/sales" },
-    { icon: Building2, label: "Hospital Visits", href: "/sales" },
-    { icon: Dumbbell, label: "Gym Outreach", href: "/sales" },
-    { icon: PhoneCall, label: "Call Logs", href: "/sales" },
-    { icon: MapPin, label: "Visit History", href: "/sales" },
-    { icon: FileText, label: "Lead Pipeline", href: "/sales" }
+    {
+      icon: Building2,
+      label: "Hospital Visits",
+      href: "/sales/hospital-visit"
+    },
+    { icon: Dumbbell, label: "Gym Outreach", href: "/sales/gym-outreach" }
   ],
   patient: [
     { icon: LayoutDashboard, label: "Dashboard", href: "/patient" },
@@ -34472,7 +34473,7 @@ function Sidebar({ onClose }) {
           ) })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "flex-1 py-4 px-2 space-y-1 overflow-y-auto overflow-x-hidden", children: items.map((item) => {
-          const isActive = location.pathname === item.href || item.href !== "/admin" && item.href !== "/doctor" && item.href !== "/receptionist" && location.pathname.startsWith(item.href);
+          const isActive = location.pathname === item.href || item.href !== "/admin" && item.href !== "/doctor" && item.href !== "/receptionist" && item.href !== "/sales" && item.href !== "/patient" && location.pathname.startsWith(item.href);
           return /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Link,
             {
@@ -77735,7 +77736,6 @@ function HospitalVisitTab() {
   ] });
 }
 function SalesDashboard() {
-  const [activeTab, setActiveTab] = reactExports.useState("hospital");
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       PageHeader,
@@ -77787,30 +77787,7 @@ function SalesDashboard() {
           "data-ocid": "sales.stat.call_duration"
         }
       )
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-border bg-card p-1 inline-flex gap-1", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "button",
-        {
-          type: "button",
-          "data-ocid": "sales.tab.hospital",
-          onClick: () => setActiveTab("hospital"),
-          className: `px-5 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === "hospital" ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`,
-          children: "🏥 Hospital Visit Executive"
-        }
-      ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "button",
-        {
-          type: "button",
-          "data-ocid": "sales.tab.gym",
-          onClick: () => setActiveTab("gym"),
-          className: `px-5 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === "gym" ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`,
-          children: "🏋️ Gym/Fitness Outreach"
-        }
-      )
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: activeTab === "hospital" ? /* @__PURE__ */ jsxRuntimeExports.jsx(HospitalVisitTab, {}) : /* @__PURE__ */ jsxRuntimeExports.jsx(GymFitnessTab, {}) })
+    ] })
   ] });
 }
 const rootRoute = createRootRoute();
@@ -77931,6 +77908,16 @@ const salesIndexRoute = createRoute({
   path: "/",
   component: SalesDashboard
 });
+const salesHospitalVisitRoute = createRoute({
+  getParentRoute: () => salesLayoutRoute,
+  path: "/hospital-visit",
+  component: HospitalVisitTab
+});
+const salesGymOutreachRoute = createRoute({
+  getParentRoute: () => salesLayoutRoute,
+  path: "/gym-outreach",
+  component: GymFitnessTab
+});
 const patientLayoutRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/patient",
@@ -78000,7 +77987,11 @@ const routeTree = rootRoute.addChildren([
     receptionistQueueRoute,
     receptionistBillingRoute
   ]),
-  salesLayoutRoute.addChildren([salesIndexRoute]),
+  salesLayoutRoute.addChildren([
+    salesIndexRoute,
+    salesHospitalVisitRoute,
+    salesGymOutreachRoute
+  ]),
   patientLayoutRoute.addChildren([
     patientIndexRoute,
     patientAppointmentsRoute,

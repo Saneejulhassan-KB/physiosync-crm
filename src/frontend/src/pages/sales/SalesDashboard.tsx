@@ -2,15 +2,8 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import { StatCard } from "@/components/shared/StatCard";
 import { SALES_STATS } from "@/lib/salesPatientData";
 import { Briefcase, Phone, TrendingUp, Users } from "lucide-react";
-import { useState } from "react";
-import GymFitnessTab from "./GymFitnessTab";
-import HospitalVisitTab from "./HospitalVisitTab";
-
-type SalesTab = "hospital" | "gym";
 
 export default function SalesDashboard() {
-  const [activeTab, setActiveTab] = useState<SalesTab>("hospital");
-
   return (
     <div className="p-6 space-y-6">
       <PageHeader
@@ -50,39 +43,6 @@ export default function SalesDashboard() {
           value={SALES_STATS.avgCallDuration}
           data-ocid="sales.stat.call_duration"
         />
-      </div>
-
-      {/* Tab Switcher */}
-      <div className="rounded-xl border border-border bg-card p-1 inline-flex gap-1">
-        <button
-          type="button"
-          data-ocid="sales.tab.hospital"
-          onClick={() => setActiveTab("hospital")}
-          className={`px-5 py-2 rounded-lg text-sm font-medium transition-all ${
-            activeTab === "hospital"
-              ? "bg-primary text-primary-foreground shadow-sm"
-              : "text-muted-foreground hover:text-foreground hover:bg-muted"
-          }`}
-        >
-          🏥 Hospital Visit Executive
-        </button>
-        <button
-          type="button"
-          data-ocid="sales.tab.gym"
-          onClick={() => setActiveTab("gym")}
-          className={`px-5 py-2 rounded-lg text-sm font-medium transition-all ${
-            activeTab === "gym"
-              ? "bg-primary text-primary-foreground shadow-sm"
-              : "text-muted-foreground hover:text-foreground hover:bg-muted"
-          }`}
-        >
-          🏋️ Gym/Fitness Outreach
-        </button>
-      </div>
-
-      {/* Tab Content */}
-      <div>
-        {activeTab === "hospital" ? <HospitalVisitTab /> : <GymFitnessTab />}
       </div>
     </div>
   );

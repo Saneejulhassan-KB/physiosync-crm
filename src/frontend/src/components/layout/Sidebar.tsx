@@ -70,11 +70,12 @@ const NAV_ITEMS: Record<UserRole, NavItem[]> = {
   ],
   sales: [
     { icon: LayoutDashboard, label: "Dashboard", href: "/sales" },
-    { icon: Building2, label: "Hospital Visits", href: "/sales" },
-    { icon: Dumbbell, label: "Gym Outreach", href: "/sales" },
-    { icon: PhoneCall, label: "Call Logs", href: "/sales" },
-    { icon: MapPin, label: "Visit History", href: "/sales" },
-    { icon: FileText, label: "Lead Pipeline", href: "/sales" },
+    {
+      icon: Building2,
+      label: "Hospital Visits",
+      href: "/sales/hospital-visit",
+    },
+    { icon: Dumbbell, label: "Gym Outreach", href: "/sales/gym-outreach" },
   ],
   patient: [
     { icon: LayoutDashboard, label: "Dashboard", href: "/patient" },
@@ -152,6 +153,8 @@ export function Sidebar({ onClose }: SidebarProps) {
             (item.href !== "/admin" &&
               item.href !== "/doctor" &&
               item.href !== "/receptionist" &&
+              item.href !== "/sales" &&
+              item.href !== "/patient" &&
               location.pathname.startsWith(item.href));
           return (
             <Link

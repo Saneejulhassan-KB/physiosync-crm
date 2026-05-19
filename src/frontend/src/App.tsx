@@ -22,6 +22,8 @@ import Billing from "@/pages/receptionist/Billing";
 import PatientRegistration from "@/pages/receptionist/PatientRegistration";
 import Queue from "@/pages/receptionist/Queue";
 import ReceptionistDashboard from "@/pages/receptionist/ReceptionistDashboard";
+import GymFitnessTab from "@/pages/sales/GymFitnessTab";
+import HospitalVisitTab from "@/pages/sales/HospitalVisitTab";
 import SalesDashboard from "@/pages/sales/SalesDashboard";
 import { useAuthStore } from "@/stores/authStore";
 import {
@@ -183,6 +185,18 @@ const salesIndexRoute = createRoute({
   component: SalesDashboard,
 });
 
+const salesHospitalVisitRoute = createRoute({
+  getParentRoute: () => salesLayoutRoute,
+  path: "/hospital-visit",
+  component: HospitalVisitTab,
+});
+
+const salesGymOutreachRoute = createRoute({
+  getParentRoute: () => salesLayoutRoute,
+  path: "/gym-outreach",
+  component: GymFitnessTab,
+});
+
 // /patient — Layout wrapper
 const patientLayoutRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -263,7 +277,11 @@ const routeTree = rootRoute.addChildren([
     receptionistQueueRoute,
     receptionistBillingRoute,
   ]),
-  salesLayoutRoute.addChildren([salesIndexRoute]),
+  salesLayoutRoute.addChildren([
+    salesIndexRoute,
+    salesHospitalVisitRoute,
+    salesGymOutreachRoute,
+  ]),
   patientLayoutRoute.addChildren([
     patientIndexRoute,
     patientAppointmentsRoute,
