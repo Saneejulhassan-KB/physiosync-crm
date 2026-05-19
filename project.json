@@ -1,0 +1,28 @@
+{
+  "overview": "PhysioSync CRM is a premium enterprise-grade frontend demo for a multi-role physiotherapy and rehabilitation clinic management system. It features realistic dashboards for Super Admin, Doctor, and Receptionist roles with detailed mock patient data, revenue analytics, appointment scheduling, patient timelines, and professional healthcare SaaS UI.",
+  "features": [
+    "Multi-role login simulation (Super Admin, Doctor, Receptionist)",
+    "Super Admin dashboard with revenue, lead, and appointment analytics",
+    "Doctor dashboard with patient history, prescriptions, therapy plans, and lab reports",
+    "Receptionist dashboard with appointment booking, queue management, and check-in",
+    "Detailed patient profiles with activity timeline",
+    "Notification center with priority filtering and toast alerts",
+    "Smart appointment calendar",
+    "Dark/light mode toggle",
+    "Fully responsive mobile-first design",
+    "Realistic mock data with appointments, prescriptions, lab reports, and therapy notes"
+  ],
+  "category": "healthcare",
+  "tags": [
+    "healthcare",
+    "crm",
+    "physiotherapy",
+    "dashboard",
+    "multi-role",
+    "enterprise",
+    "clinic-management",
+    "recharts",
+    "framer-motion"
+  ],
+  "last_updated": "2026-05-19T05:16:30.982Z"
+}
