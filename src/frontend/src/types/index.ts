@@ -1,4 +1,9 @@
-export type UserRole = "super_admin" | "doctor" | "receptionist";
+export type UserRole =
+  | "super_admin"
+  | "doctor"
+  | "receptionist"
+  | "sales"
+  | "patient";
 export type Department = "PMR" | "General" | "Admin";
 export type AppointmentStatus =
   | "scheduled"

@@ -41,6 +41,22 @@ export const MOCK_USERS: Record<string, User> = {
     email: "emily.torres@physiosync.com",
     phone: "+1-555-0103",
   },
+  sales: {
+    id: "u4",
+    name: "Marcus Reid",
+    role: "sales",
+    department: "Admin",
+    email: "sales@clinic.com",
+    phone: "+1-555-0104",
+  },
+  patient: {
+    id: "u5",
+    name: "Jordan Mitchell",
+    role: "patient",
+    department: "General",
+    email: "patient@clinic.com",
+    phone: "+1-617-555-8001",
+  },
 };
 
 export const MOCK_DOCTORS: Doctor[] = [

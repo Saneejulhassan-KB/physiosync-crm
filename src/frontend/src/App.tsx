@@ -9,11 +9,20 @@ import DoctorDashboard from "@/pages/doctor/DoctorDashboard";
 import DoctorNotifications from "@/pages/doctor/DoctorNotifications";
 import PatientDetail from "@/pages/doctor/PatientDetail";
 import PatientList from "@/pages/doctor/PatientList";
+import PatientAppointments from "@/pages/patient/PatientAppointments";
+import PatientBilling from "@/pages/patient/PatientBilling";
+import PatientDashboard from "@/pages/patient/PatientDashboard";
+import PatientNotifications from "@/pages/patient/PatientNotifications";
+import PatientPrescriptions from "@/pages/patient/PatientPrescriptions";
+import PatientProfile from "@/pages/patient/PatientProfile";
+import PatientProgress from "@/pages/patient/PatientProgress";
+import PatientReports from "@/pages/patient/PatientReports";
 import AppointmentBooking from "@/pages/receptionist/AppointmentBooking";
 import Billing from "@/pages/receptionist/Billing";
 import PatientRegistration from "@/pages/receptionist/PatientRegistration";
 import Queue from "@/pages/receptionist/Queue";
 import ReceptionistDashboard from "@/pages/receptionist/ReceptionistDashboard";
+import SalesDashboard from "@/pages/sales/SalesDashboard";
 import { useAuthStore } from "@/stores/authStore";
 import {
   RouterProvider,
@@ -160,6 +169,76 @@ const receptionistBillingRoute = createRoute({
   component: Billing,
 });
 
+// /sales — Layout wrapper
+const salesLayoutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/sales",
+  beforeLoad: requireAuth,
+  component: Layout,
+});
+
+const salesIndexRoute = createRoute({
+  getParentRoute: () => salesLayoutRoute,
+  path: "/",
+  component: SalesDashboard,
+});
+
+// /patient — Layout wrapper
+const patientLayoutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/patient",
+  beforeLoad: requireAuth,
+  component: Layout,
+});
+
+const patientIndexRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/",
+  component: PatientDashboard,
+});
+
+const patientAppointmentsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/appointments",
+  component: PatientAppointments,
+});
+
+const patientReportsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/reports",
+  component: PatientReports,
+});
+
+const patientPrescriptionsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/prescriptions",
+  component: PatientPrescriptions,
+});
+
+const patientNotificationsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/notifications",
+  component: PatientNotifications,
+});
+
+const patientProgressRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/progress",
+  component: PatientProgress,
+});
+
+const patientBillingRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/billing",
+  component: PatientBilling,
+});
+
+const patientProfileRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/profile",
+  component: PatientProfile,
+});
+
 // Build route tree
 const routeTree = rootRoute.addChildren([
   indexRoute,
@@ -183,6 +262,17 @@ const routeTree = rootRoute.addChildren([
     receptionistAppointmentsRoute,
     receptionistQueueRoute,
     receptionistBillingRoute,
+  ]),
+  salesLayoutRoute.addChildren([salesIndexRoute]),
+  patientLayoutRoute.addChildren([
+    patientIndexRoute,
+    patientAppointmentsRoute,
+    patientReportsRoute,
+    patientPrescriptionsRoute,
+    patientNotificationsRoute,
+    patientProgressRoute,
+    patientBillingRoute,
+    patientProfileRoute,
   ]),
 ]);
 

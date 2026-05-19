@@ -14079,6 +14079,22 @@ const MOCK_USERS = {
     department: "General",
     email: "emily.torres@physiosync.com",
     phone: "+1-555-0103"
+  },
+  sales: {
+    id: "u4",
+    name: "Marcus Reid",
+    role: "sales",
+    department: "Admin",
+    email: "sales@clinic.com",
+    phone: "+1-555-0104"
+  },
+  patient: {
+    id: "u5",
+    name: "Jordan Mitchell",
+    role: "patient",
+    department: "General",
+    email: "patient@clinic.com",
+    phone: "+1-617-555-8001"
   }
 };
 const MOCK_DOCTORS = [
@@ -22766,7 +22782,7 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$$ = [
+const __iconNode$1b = [
   [
     "path",
     {
@@ -22775,47 +22791,47 @@ const __iconNode$$ = [
     }
   ]
 ];
-const Activity = createLucideIcon("activity", __iconNode$$);
+const Activity = createLucideIcon("activity", __iconNode$1b);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$_ = [
+const __iconNode$1a = [
   ["path", { d: "m7 7 10 10", key: "1fmybs" }],
   ["path", { d: "M17 7v10H7", key: "6fjiku" }]
 ];
-const ArrowDownRight = createLucideIcon("arrow-down-right", __iconNode$_);
+const ArrowDownRight = createLucideIcon("arrow-down-right", __iconNode$1a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$Z = [
+const __iconNode$19 = [
   ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
   ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$Z);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$19);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$Y = [
+const __iconNode$18 = [
   ["path", { d: "M7 7h10v10", key: "1tivn9" }],
   ["path", { d: "M7 17 17 7", key: "1vkiza" }]
 ];
-const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$Y);
+const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$18);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$X = [
+const __iconNode$17 = [
   [
     "path",
     {
@@ -22825,14 +22841,14 @@ const __iconNode$X = [
   ],
   ["circle", { cx: "12", cy: "8", r: "6", key: "1vp47v" }]
 ];
-const Award = createLucideIcon("award", __iconNode$X);
+const Award = createLucideIcon("award", __iconNode$17);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$W = [
+const __iconNode$16 = [
   ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
   [
     "path",
@@ -22842,14 +22858,25 @@ const __iconNode$W = [
     }
   ]
 ];
-const Bell = createLucideIcon("bell", __iconNode$W);
+const Bell = createLucideIcon("bell", __iconNode$16);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$V = [
+const __iconNode$15 = [
+  ["path", { d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16", key: "jecpp" }],
+  ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2", key: "i6l2r4" }]
+];
+const Briefcase = createLucideIcon("briefcase", __iconNode$15);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$14 = [
   ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
   ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
   ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
@@ -22858,14 +22885,34 @@ const __iconNode$V = [
   ["path", { d: "M10 14h4", key: "kelpxr" }],
   ["path", { d: "M10 18h4", key: "1ulq68" }]
 ];
-const Building2 = createLucideIcon("building-2", __iconNode$V);
+const Building2 = createLucideIcon("building-2", __iconNode$14);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$U = [
+const __iconNode$13 = [
+  ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2", key: "76otgf" }],
+  ["path", { d: "M9 22v-4h6v4", key: "r93iot" }],
+  ["path", { d: "M8 6h.01", key: "1dz90k" }],
+  ["path", { d: "M16 6h.01", key: "1x0f13" }],
+  ["path", { d: "M12 6h.01", key: "1vi96p" }],
+  ["path", { d: "M12 10h.01", key: "1nrarc" }],
+  ["path", { d: "M12 14h.01", key: "1etili" }],
+  ["path", { d: "M16 10h.01", key: "1m94wz" }],
+  ["path", { d: "M16 14h.01", key: "1gbofw" }],
+  ["path", { d: "M8 10h.01", key: "19clt8" }],
+  ["path", { d: "M8 14h.01", key: "6423bh" }]
+];
+const Building = createLucideIcon("building", __iconNode$13);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$12 = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
@@ -22877,7 +22924,111 @@ const __iconNode$U = [
   ["path", { d: "M12 18h.01", key: "mhygvu" }],
   ["path", { d: "M16 18h.01", key: "kzsmim" }]
 ];
-const CalendarDays = createLucideIcon("calendar-days", __iconNode$U);
+const CalendarDays = createLucideIcon("calendar-days", __iconNode$12);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$11 = [
+  ["path", { d: "M8 2v4", key: "1cmpym" }],
+  ["path", { d: "M16 2v4", key: "4m81vk" }],
+  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
+  ["path", { d: "M3 10h18", key: "8toen8" }]
+];
+const Calendar = createLucideIcon("calendar", __iconNode$11);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$10 = [
+  [
+    "path",
+    {
+      d: "M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z",
+      key: "1tc9qg"
+    }
+  ],
+  ["circle", { cx: "12", cy: "13", r: "3", key: "1vg3eu" }]
+];
+const Camera = createLucideIcon("camera", __iconNode$10);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$$ = [
+  ["path", { d: "M18 6 7 17l-5-5", key: "116fxf" }],
+  ["path", { d: "m22 10-7.5 7.5L13 16", key: "ke71qq" }]
+];
+const CheckCheck = createLucideIcon("check-check", __iconNode$$);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$_ = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$_);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$Z = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$Z);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$Y = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$Y);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$X = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$X);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$W = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$W);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$V = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
+  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
+];
+const CircleAlert = createLucideIcon("circle-alert", __iconNode$V);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$U = [
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+];
+const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$U);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -22885,12 +23036,10 @@ const CalendarDays = createLucideIcon("calendar-days", __iconNode$U);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$T = [
-  ["path", { d: "M8 2v4", key: "1cmpym" }],
-  ["path", { d: "M16 2v4", key: "4m81vk" }],
-  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
-  ["path", { d: "M3 10h18", key: "8toen8" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Calendar = createLucideIcon("calendar", __iconNode$T);
+const CircleCheck = createLucideIcon("circle-check", __iconNode$T);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -22898,103 +23047,18 @@ const Calendar = createLucideIcon("calendar", __iconNode$T);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$S = [
-  ["path", { d: "M18 6 7 17l-5-5", key: "116fxf" }],
-  ["path", { d: "m22 10-7.5 7.5L13 16", key: "ke71qq" }]
-];
-const CheckCheck = createLucideIcon("check-check", __iconNode$S);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$R = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$R);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$Q = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$Q);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$P = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-const ChevronLeft = createLucideIcon("chevron-left", __iconNode$P);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$O = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$O);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$N = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$N);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$M = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
-  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
-];
-const CircleAlert = createLucideIcon("circle-alert", __iconNode$M);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$L = [
-  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-];
-const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$L);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$K = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
-];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$K);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$J = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "m15 9-6 6", key: "1uzhvr" }],
   ["path", { d: "m9 9 6 6", key: "z0biqf" }]
 ];
-const CircleX = createLucideIcon("circle-x", __iconNode$J);
+const CircleX = createLucideIcon("circle-x", __iconNode$S);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$I = [
+const __iconNode$R = [
   ["rect", { width: "8", height: "4", x: "8", y: "2", rx: "1", ry: "1", key: "tgr4d6" }],
   [
     "path",
@@ -23005,14 +23069,14 @@ const __iconNode$I = [
   ],
   ["path", { d: "m9 14 2 2 4-4", key: "df797q" }]
 ];
-const ClipboardCheck = createLucideIcon("clipboard-check", __iconNode$I);
+const ClipboardCheck = createLucideIcon("clipboard-check", __iconNode$R);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$H = [
+const __iconNode$Q = [
   ["rect", { width: "8", height: "4", x: "8", y: "2", rx: "1", ry: "1", key: "tgr4d6" }],
   [
     "path",
@@ -23026,70 +23090,96 @@ const __iconNode$H = [
   ["path", { d: "M8 11h.01", key: "1dfujw" }],
   ["path", { d: "M8 16h.01", key: "18s6g9" }]
 ];
-const ClipboardList = createLucideIcon("clipboard-list", __iconNode$H);
+const ClipboardList = createLucideIcon("clipboard-list", __iconNode$Q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$G = [
+const __iconNode$P = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
 ];
-const Clock = createLucideIcon("clock", __iconNode$G);
+const Clock = createLucideIcon("clock", __iconNode$P);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$F = [
+const __iconNode$O = [
   ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
   ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
 ];
-const Copy = createLucideIcon("copy", __iconNode$F);
+const Copy = createLucideIcon("copy", __iconNode$O);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$E = [
+const __iconNode$N = [
   ["rect", { width: "20", height: "14", x: "2", y: "5", rx: "2", key: "ynyp8z" }],
   ["line", { x1: "2", x2: "22", y1: "10", y2: "10", key: "1b3vmo" }]
 ];
-const CreditCard = createLucideIcon("credit-card", __iconNode$E);
+const CreditCard = createLucideIcon("credit-card", __iconNode$N);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$D = [
+const __iconNode$M = [
   ["line", { x1: "12", x2: "12", y1: "2", y2: "22", key: "7eqyqh" }],
   ["path", { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6", key: "1b0p4s" }]
 ];
-const DollarSign = createLucideIcon("dollar-sign", __iconNode$D);
+const DollarSign = createLucideIcon("dollar-sign", __iconNode$M);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$C = [
+const __iconNode$L = [
   ["path", { d: "M12 15V3", key: "m9g1x1" }],
   ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
   ["path", { d: "m7 10 5 5 5-5", key: "brsn70" }]
 ];
-const Download = createLucideIcon("download", __iconNode$C);
+const Download = createLucideIcon("download", __iconNode$L);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$B = [
+const __iconNode$K = [
+  [
+    "path",
+    {
+      d: "M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z",
+      key: "9m4mmf"
+    }
+  ],
+  ["path", { d: "m2.5 21.5 1.4-1.4", key: "17g3f0" }],
+  ["path", { d: "m20.1 3.9 1.4-1.4", key: "1qn309" }],
+  [
+    "path",
+    {
+      d: "M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z",
+      key: "1t2c92"
+    }
+  ],
+  ["path", { d: "m9.6 14.4 4.8-4.8", key: "6umqxw" }]
+];
+const Dumbbell = createLucideIcon("dumbbell", __iconNode$K);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$J = [
   [
     "path",
     {
@@ -23099,28 +23189,28 @@ const __iconNode$B = [
   ],
   ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
 ];
-const Eye = createLucideIcon("eye", __iconNode$B);
+const Eye = createLucideIcon("eye", __iconNode$J);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$A = [
+const __iconNode$I = [
   ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
   ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
   ["path", { d: "M10 9H8", key: "b1mrlr" }],
   ["path", { d: "M16 13H8", key: "t4e002" }],
   ["path", { d: "M16 17H8", key: "z1uh3a" }]
 ];
-const FileText = createLucideIcon("file-text", __iconNode$A);
+const FileText = createLucideIcon("file-text", __iconNode$I);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$z = [
+const __iconNode$H = [
   [
     "path",
     {
@@ -23131,14 +23221,14 @@ const __iconNode$z = [
   ["path", { d: "M6.453 15h11.094", key: "3shlmq" }],
   ["path", { d: "M8.5 2h7", key: "csnxdl" }]
 ];
-const FlaskConical = createLucideIcon("flask-conical", __iconNode$z);
+const FlaskConical = createLucideIcon("flask-conical", __iconNode$H);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$y = [
+const __iconNode$G = [
   [
     "path",
     {
@@ -23147,14 +23237,56 @@ const __iconNode$y = [
     }
   ]
 ];
-const Funnel$1 = createLucideIcon("funnel", __iconNode$y);
+const Funnel$1 = createLucideIcon("funnel", __iconNode$G);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$x = [
+const __iconNode$F = [
+  [
+    "path",
+    {
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
+    }
+  ],
+  [
+    "path",
+    {
+      d: "M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66",
+      key: "4oyue0"
+    }
+  ],
+  ["path", { d: "m18 15-2-2", key: "60u0ii" }],
+  ["path", { d: "m15 18-2-2", key: "6p76be" }]
+];
+const HeartHandshake = createLucideIcon("heart-handshake", __iconNode$F);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$E = [
+  [
+    "path",
+    {
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
+    }
+  ],
+  ["path", { d: "M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27", key: "1uw2ng" }]
+];
+const HeartPulse = createLucideIcon("heart-pulse", __iconNode$E);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$D = [
   [
     "path",
     {
@@ -23163,39 +23295,39 @@ const __iconNode$x = [
     }
   ]
 ];
-const Heart = createLucideIcon("heart", __iconNode$x);
+const Heart = createLucideIcon("heart", __iconNode$D);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$w = [
+const __iconNode$C = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 16v-4", key: "1dtifu" }],
   ["path", { d: "M12 8h.01", key: "e9boi3" }]
 ];
-const Info = createLucideIcon("info", __iconNode$w);
+const Info = createLucideIcon("info", __iconNode$C);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$v = [
+const __iconNode$B = [
   ["rect", { width: "7", height: "9", x: "3", y: "3", rx: "1", key: "10lvy0" }],
   ["rect", { width: "7", height: "5", x: "14", y: "3", rx: "1", key: "16une8" }],
   ["rect", { width: "7", height: "9", x: "14", y: "12", rx: "1", key: "1hutg5" }],
   ["rect", { width: "7", height: "5", x: "3", y: "16", rx: "1", key: "ldoo1y" }]
 ];
-const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$v);
+const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$B);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$u = [
+const __iconNode$A = [
   ["path", { d: "M3 12h.01", key: "nlz23k" }],
   ["path", { d: "M3 18h.01", key: "1tta3j" }],
   ["path", { d: "M3 6h.01", key: "1rqtza" }],
@@ -23203,49 +23335,49 @@ const __iconNode$u = [
   ["path", { d: "M8 18h13", key: "1lx6n3" }],
   ["path", { d: "M8 6h13", key: "ik3vkj" }]
 ];
-const List$1 = createLucideIcon("list", __iconNode$u);
+const List$1 = createLucideIcon("list", __iconNode$A);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$t = [
+const __iconNode$z = [
   ["path", { d: "m10 17 5-5-5-5", key: "1bsop3" }],
   ["path", { d: "M15 12H3", key: "6jk70r" }],
   ["path", { d: "M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4", key: "u53s6r" }]
 ];
-const LogIn = createLucideIcon("log-in", __iconNode$t);
+const LogIn = createLucideIcon("log-in", __iconNode$z);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$s = [
+const __iconNode$y = [
   ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
   ["path", { d: "M21 12H9", key: "dn1m92" }],
   ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
 ];
-const LogOut = createLucideIcon("log-out", __iconNode$s);
+const LogOut = createLucideIcon("log-out", __iconNode$y);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$r = [
+const __iconNode$x = [
   ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
   ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
 ];
-const Mail = createLucideIcon("mail", __iconNode$r);
+const Mail = createLucideIcon("mail", __iconNode$x);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$q = [
+const __iconNode$w = [
   [
     "path",
     {
@@ -23255,7 +23387,75 @@ const __iconNode$q = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$q);
+const MapPin = createLucideIcon("map-pin", __iconNode$w);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$v = [
+  ["path", { d: "m3 11 18-5v12L3 14v-3z", key: "n962bs" }],
+  ["path", { d: "M11.6 16.8a3 3 0 1 1-5.8-1.6", key: "1yl0tm" }]
+];
+const Megaphone = createLucideIcon("megaphone", __iconNode$v);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$u = [
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 18h16", key: "19g7jn" }],
+  ["path", { d: "M4 6h16", key: "1o0s65" }]
+];
+const Menu = createLucideIcon("menu", __iconNode$u);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$t = [
+  ["path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", key: "1lielz" }]
+];
+const MessageSquare = createLucideIcon("message-square", __iconNode$t);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$s = [["path", { d: "M5 12h14", key: "1ays0h" }]];
+const Minus = createLucideIcon("minus", __iconNode$s);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$r = [
+  ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
+];
+const Moon = createLucideIcon("moon", __iconNode$r);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$q = [
+  ["path", { d: "M12 20h9", key: "t2du7b" }],
+  [
+    "path",
+    {
+      d: "M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z",
+      key: "1ykcvy"
+    }
+  ]
+];
+const PenLine = createLucideIcon("pen-line", __iconNode$q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23263,11 +23463,17 @@ const MapPin = createLucideIcon("map-pin", __iconNode$q);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$p = [
-  ["path", { d: "M4 12h16", key: "1lakjw" }],
-  ["path", { d: "M4 18h16", key: "19g7jn" }],
-  ["path", { d: "M4 6h16", key: "1o0s65" }]
+  ["path", { d: "M13 2a9 9 0 0 1 9 9", key: "1itnx2" }],
+  ["path", { d: "M13 6a5 5 0 0 1 5 5", key: "11nki7" }],
+  [
+    "path",
+    {
+      d: "M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",
+      key: "9njp5v"
+    }
+  ]
 ];
-const Menu = createLucideIcon("menu", __iconNode$p);
+const PhoneCall = createLucideIcon("phone-call", __iconNode$p);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23275,17 +23481,29 @@ const Menu = createLucideIcon("menu", __iconNode$p);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$o = [
-  ["path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", key: "1lielz" }]
+  [
+    "path",
+    {
+      d: "M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",
+      key: "9njp5v"
+    }
+  ]
 ];
-const MessageSquare = createLucideIcon("message-square", __iconNode$o);
+const Phone = createLucideIcon("phone", __iconNode$o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$n = [["path", { d: "M5 12h14", key: "1ays0h" }]];
-const Minus = createLucideIcon("minus", __iconNode$n);
+const __iconNode$n = [
+  [
+    "path",
+    { d: "m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z", key: "wa1lgi" }
+  ],
+  ["path", { d: "m8.5 8.5 7 7", key: "rvfmvr" }]
+];
+const Pill = createLucideIcon("pill", __iconNode$n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23293,9 +23511,10 @@ const Minus = createLucideIcon("minus", __iconNode$n);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$m = [
-  ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
 ];
-const Moon = createLucideIcon("moon", __iconNode$m);
+const Plus = createLucideIcon("plus", __iconNode$m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23305,13 +23524,12 @@ const Moon = createLucideIcon("moon", __iconNode$m);
 const __iconNode$l = [
   [
     "path",
-    {
-      d: "M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",
-      key: "9njp5v"
-    }
-  ]
+    { d: "M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z", key: "q3az6g" }
+  ],
+  ["path", { d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8", key: "1h4pet" }],
+  ["path", { d: "M12 17.5v-11", key: "1jc1ny" }]
 ];
-const Phone = createLucideIcon("phone", __iconNode$l);
+const Receipt = createLucideIcon("receipt", __iconNode$l);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23319,13 +23537,12 @@ const Phone = createLucideIcon("phone", __iconNode$l);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$k = [
-  [
-    "path",
-    { d: "m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z", key: "wa1lgi" }
-  ],
-  ["path", { d: "m8.5 8.5 7 7", key: "rvfmvr" }]
+  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
+  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
+  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
+  ["path", { d: "M8 16H3v5", key: "1cv678" }]
 ];
-const Pill = createLucideIcon("pill", __iconNode$k);
+const RefreshCw = createLucideIcon("refresh-cw", __iconNode$k);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23333,10 +23550,17 @@ const Pill = createLucideIcon("pill", __iconNode$k);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$j = [
-  ["path", { d: "M5 12h14", key: "1ays0h" }],
-  ["path", { d: "M12 5v14", key: "s699le" }]
+  [
+    "path",
+    {
+      d: "M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z",
+      key: "1c8476"
+    }
+  ],
+  ["path", { d: "M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7", key: "1ydtos" }],
+  ["path", { d: "M7 3v4a1 1 0 0 0 1 1h7", key: "t51u73" }]
 ];
-const Plus = createLucideIcon("plus", __iconNode$j);
+const Save = createLucideIcon("save", __iconNode$j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23344,12 +23568,10 @@ const Plus = createLucideIcon("plus", __iconNode$j);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$i = [
-  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
-  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
-  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
-  ["path", { d: "M8 16H3v5", key: "1cv678" }]
+  ["path", { d: "m21 21-4.34-4.34", key: "14j7rj" }],
+  ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }]
 ];
-const RefreshCw = createLucideIcon("refresh-cw", __iconNode$i);
+const Search = createLucideIcon("search", __iconNode$i);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23357,10 +23579,16 @@ const RefreshCw = createLucideIcon("refresh-cw", __iconNode$i);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$h = [
-  ["path", { d: "m21 21-4.34-4.34", key: "14j7rj" }],
-  ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }]
+  [
+    "path",
+    {
+      d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
+      key: "1ffxy3"
+    }
+  ],
+  ["path", { d: "m21.854 2.147-10.94 10.939", key: "12cjpa" }]
 ];
-const Search = createLucideIcon("search", __iconNode$h);
+const Send = createLucideIcon("send", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23371,13 +23599,13 @@ const __iconNode$g = [
   [
     "path",
     {
-      d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
-      key: "1ffxy3"
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
     }
   ],
-  ["path", { d: "m21.854 2.147-10.94 10.939", key: "12cjpa" }]
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Send = createLucideIcon("send", __iconNode$g);
+const ShieldCheck = createLucideIcon("shield-check", __iconNode$g);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23391,10 +23619,9 @@ const __iconNode$f = [
       d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
       key: "oel41y"
     }
-  ],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+  ]
 ];
-const ShieldCheck = createLucideIcon("shield-check", __iconNode$f);
+const Shield = createLucideIcon("shield", __iconNode$f);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23402,22 +23629,6 @@ const ShieldCheck = createLucideIcon("shield-check", __iconNode$f);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$e = [
-  [
-    "path",
-    {
-      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
-      key: "oel41y"
-    }
-  ]
-];
-const Shield = createLucideIcon("shield", __iconNode$e);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$d = [
   ["path", { d: "M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7", key: "1m0v6g" }],
   [
     "path",
@@ -23427,14 +23638,14 @@ const __iconNode$d = [
     }
   ]
 ];
-const SquarePen = createLucideIcon("square-pen", __iconNode$d);
+const SquarePen = createLucideIcon("square-pen", __iconNode$e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$c = [
+const __iconNode$d = [
   [
     "path",
     {
@@ -23443,7 +23654,21 @@ const __iconNode$c = [
     }
   ]
 ];
-const Star = createLucideIcon("star", __iconNode$c);
+const Star = createLucideIcon("star", __iconNode$d);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$c = [
+  ["path", { d: "M11 2v2", key: "1539x4" }],
+  ["path", { d: "M5 2v2", key: "1yf1q8" }],
+  ["path", { d: "M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1", key: "rb5t3r" }],
+  ["path", { d: "M8 15a6 6 0 0 0 12 0v-3", key: "x18d4x" }],
+  ["circle", { cx: "20", cy: "10", r: "2", key: "ts1r5v" }]
+];
+const Stethoscope = createLucideIcon("stethoscope", __iconNode$c);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23451,20 +23676,6 @@ const Star = createLucideIcon("star", __iconNode$c);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$b = [
-  ["path", { d: "M11 2v2", key: "1539x4" }],
-  ["path", { d: "M5 2v2", key: "1yf1q8" }],
-  ["path", { d: "M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1", key: "rb5t3r" }],
-  ["path", { d: "M8 15a6 6 0 0 0 12 0v-3", key: "x18d4x" }],
-  ["circle", { cx: "20", cy: "10", r: "2", key: "ts1r5v" }]
-];
-const Stethoscope = createLucideIcon("stethoscope", __iconNode$b);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$a = [
   ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
   ["path", { d: "M12 2v2", key: "tus03m" }],
   ["path", { d: "M12 20v2", key: "1lh1kg" }],
@@ -23475,7 +23686,19 @@ const __iconNode$a = [
   ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
   ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
 ];
-const Sun = createLucideIcon("sun", __iconNode$a);
+const Sun = createLucideIcon("sun", __iconNode$b);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$a = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["circle", { cx: "12", cy: "12", r: "6", key: "1vlfrh" }],
+  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }]
+];
+const Target = createLucideIcon("target", __iconNode$a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23483,11 +23706,10 @@ const Sun = createLucideIcon("sun", __iconNode$a);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$9 = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["circle", { cx: "12", cy: "12", r: "6", key: "1vlfrh" }],
-  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }]
+  ["path", { d: "M16 17h6v-6", key: "t6n2it" }],
+  ["path", { d: "m22 17-8.5-8.5-5 5L2 7", key: "x473p" }]
 ];
-const Target = createLucideIcon("target", __iconNode$9);
+const TrendingDown = createLucideIcon("trending-down", __iconNode$9);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23495,10 +23717,10 @@ const Target = createLucideIcon("target", __iconNode$9);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$8 = [
-  ["path", { d: "M16 17h6v-6", key: "t6n2it" }],
-  ["path", { d: "m22 17-8.5-8.5-5 5L2 7", key: "x473p" }]
+  ["path", { d: "M16 7h6v6", key: "box55l" }],
+  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
 ];
-const TrendingDown = createLucideIcon("trending-down", __iconNode$8);
+const TrendingUp = createLucideIcon("trending-up", __iconNode$8);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23506,17 +23728,6 @@ const TrendingDown = createLucideIcon("trending-down", __iconNode$8);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$7 = [
-  ["path", { d: "M16 7h6v6", key: "box55l" }],
-  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
-];
-const TrendingUp = createLucideIcon("trending-up", __iconNode$7);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$6 = [
   [
     "path",
     {
@@ -23527,7 +23738,19 @@ const __iconNode$6 = [
   ["path", { d: "M12 9v4", key: "juzpu7" }],
   ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$6);
+const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$7);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$6 = [
+  ["path", { d: "m16 11 2 2 4-4", key: "9rsbq5" }],
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
+];
+const UserCheck = createLucideIcon("user-check", __iconNode$6);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23535,18 +23758,6 @@ const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$6);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$5 = [
-  ["path", { d: "m16 11 2 2 4-4", key: "9rsbq5" }],
-  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
-  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
-];
-const UserCheck = createLucideIcon("user-check", __iconNode$5);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$4 = [
   ["path", { d: "M10 15H6a4 4 0 0 0-4 4v2", key: "1nfge6" }],
   ["path", { d: "m14.305 16.53.923-.382", key: "1itpsq" }],
   ["path", { d: "m15.228 13.852-.923-.383", key: "eplpkm" }],
@@ -23559,7 +23770,20 @@ const __iconNode$4 = [
   ["circle", { cx: "18", cy: "15", r: "3", key: "gjjjvw" }],
   ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
 ];
-const UserCog = createLucideIcon("user-cog", __iconNode$4);
+const UserCog = createLucideIcon("user-cog", __iconNode$5);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$4 = [
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }],
+  ["line", { x1: "17", x2: "22", y1: "8", y2: "13", key: "3nzzx3" }],
+  ["line", { x1: "22", x2: "17", y1: "8", y2: "13", key: "1swrse" }]
+];
+const UserX = createLucideIcon("user-x", __iconNode$4);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23567,12 +23791,10 @@ const UserCog = createLucideIcon("user-cog", __iconNode$4);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$3 = [
-  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
-  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }],
-  ["line", { x1: "17", x2: "22", y1: "8", y2: "13", key: "3nzzx3" }],
-  ["line", { x1: "22", x2: "17", y1: "8", y2: "13", key: "1swrse" }]
+  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
+  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
 ];
-const UserX = createLucideIcon("user-x", __iconNode$3);
+const User = createLucideIcon("user", __iconNode$3);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23580,10 +23802,12 @@ const UserX = createLucideIcon("user-x", __iconNode$3);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$2 = [
-  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
-  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
+  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
 ];
-const User = createLucideIcon("user", __iconNode$2);
+const Users = createLucideIcon("users", __iconNode$2);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23591,12 +23815,10 @@ const User = createLucideIcon("user", __iconNode$2);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$1 = [
-  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
-  ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
-  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
-  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
+  ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
+  ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
 ];
-const Users = createLucideIcon("users", __iconNode$1);
+const X = createLucideIcon("x", __iconNode$1);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23604,10 +23826,15 @@ const Users = createLucideIcon("users", __iconNode$1);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode = [
-  ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
-  ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
+  [
+    "path",
+    {
+      d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",
+      key: "1xq2db"
+    }
+  ]
 ];
-const X = createLucideIcon("x", __iconNode);
+const Zap = createLucideIcon("zap", __iconNode);
 const LayoutGroupContext = reactExports.createContext({});
 function useConstant(init) {
   const ref = reactExports.useRef(null);
@@ -34183,17 +34410,39 @@ const NAV_ITEMS = {
       href: "/receptionist/queue"
     },
     { icon: CreditCard, label: "Billing", href: "/receptionist/billing" }
+  ],
+  sales: [
+    { icon: LayoutDashboard, label: "Dashboard", href: "/sales" },
+    { icon: Building2, label: "Hospital Visits", href: "/sales" },
+    { icon: Dumbbell, label: "Gym Outreach", href: "/sales" },
+    { icon: PhoneCall, label: "Call Logs", href: "/sales" },
+    { icon: MapPin, label: "Visit History", href: "/sales" },
+    { icon: FileText, label: "Lead Pipeline", href: "/sales" }
+  ],
+  patient: [
+    { icon: LayoutDashboard, label: "Dashboard", href: "/patient" },
+    { icon: Calendar, label: "Appointments", href: "/patient/appointments" },
+    { icon: FlaskConical, label: "My Reports", href: "/patient/reports" },
+    { icon: Pill, label: "Prescriptions", href: "/patient/prescriptions" },
+    { icon: Bell, label: "Notifications", href: "/patient/notifications" },
+    { icon: HeartPulse, label: "My Progress", href: "/patient/progress" },
+    { icon: Receipt, label: "Billing", href: "/patient/billing" },
+    { icon: User, label: "My Profile", href: "/patient/profile" }
   ]
 };
 const ROLE_LABELS = {
   super_admin: "Super Admin",
   doctor: "Doctor",
-  receptionist: "Receptionist"
+  receptionist: "Receptionist",
+  sales: "Sales Executive",
+  patient: "Patient"
 };
 const ROLE_COLORS = {
   super_admin: "bg-accent/20 text-accent border border-accent/30",
   doctor: "bg-primary/20 text-primary border border-primary/30",
-  receptionist: "bg-secondary/20 text-secondary border border-secondary/30"
+  receptionist: "bg-secondary/20 text-secondary border border-secondary/30",
+  sales: "bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30",
+  patient: "bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/30"
 };
 function Sidebar({ onClose }) {
   const { currentUser } = useAuthStore();
@@ -36334,6 +36583,28 @@ const ROLES = [
     bgColor: "bg-secondary/10",
     borderColor: "border-secondary/30 hover:border-secondary/60",
     redirectTo: "/receptionist"
+  },
+  {
+    role: "sales",
+    icon: Briefcase,
+    title: "Sales Executive",
+    subtitle: "Sales CRM Portal",
+    description: "Hospital visit tracking, gym outreach, lead management, call logs, and conversion analytics.",
+    color: "text-orange-600 dark:text-orange-400",
+    bgColor: "bg-orange-100 dark:bg-orange-900/30",
+    borderColor: "border-orange-300/50 hover:border-orange-500/70 dark:border-orange-700/50",
+    redirectTo: "/sales"
+  },
+  {
+    role: "patient",
+    icon: HeartHandshake,
+    title: "Patient Portal",
+    subtitle: "My Health Dashboard",
+    description: "View appointments, reports, prescriptions, therapy progress, billing history, and notifications.",
+    color: "text-teal-600 dark:text-teal-400",
+    bgColor: "bg-teal-100 dark:bg-teal-900/30",
+    borderColor: "border-teal-300/50 hover:border-teal-500/70 dark:border-teal-700/50",
+    redirectTo: "/patient"
   }
 ];
 function Login() {
@@ -36367,7 +36638,7 @@ function Login() {
           ]
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-5", children: ROLES.map((r2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5", children: ROLES.map((r2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
         motion.button,
         {
           type: "button",
@@ -71978,7 +72249,7 @@ function PatientDetail() {
     ] })
   ] });
 }
-const STATUS_COLORS = {
+const STATUS_COLORS$4 = {
   active: "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/25",
   inactive: "bg-muted text-muted-foreground border-border",
   discharged: "bg-amber-500/15 text-amber-600 dark:text-amber-400 border-amber-500/25"
@@ -72159,7 +72430,7 @@ function PatientList() {
                       variant: "outline",
                       className: cn(
                         "text-[10px] shrink-0",
-                        STATUS_COLORS[patient.status]
+                        STATUS_COLORS$4[patient.status]
                       ),
                       children: patient.status
                     }
@@ -72212,6 +72483,1003 @@ function PatientList() {
     )
   ] });
 }
+const SALES_STATS = {
+  leadsThisWeek: 24,
+  visitsCompleted: 18,
+  conversionRate: 34,
+  avgCallDuration: "4m 22s",
+  leadsGrowth: 12,
+  visitsGrowth: 8,
+  conversionGrowth: 5
+};
+const SALES_LEADS = [
+  {
+    id: "sl1",
+    name: "Greenfield General Hospital",
+    phone: "+1-617-555-2001",
+    email: "admin@greenfieldgh.com",
+    source: "Cold Visit",
+    stage: "qualified",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-05-01",
+    followUpDate: "2026-05-22",
+    value: 12e3,
+    notes: "Interested in physiotherapy referral partnership."
+  },
+  {
+    id: "sl2",
+    name: "Northbridge Medical Center",
+    phone: "+1-617-555-2002",
+    email: "ceo@northbridgemc.com",
+    source: "Referral",
+    stage: "proposal",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-04-28",
+    followUpDate: "2026-05-20",
+    value: 18500,
+    notes: "Proposal sent. Awaiting board approval."
+  },
+  {
+    id: "sl3",
+    name: "Maplewood Community Clinic",
+    phone: "+1-617-555-2003",
+    email: "info@maplewoodclinic.org",
+    source: "LinkedIn",
+    stage: "contacted",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-05-05",
+    followUpDate: "2026-05-21",
+    value: 7500,
+    notes: "Initial conversation done. Scheduling a site visit."
+  },
+  {
+    id: "sl4",
+    name: "Eastview Rehabilitation Center",
+    phone: "+1-617-555-2004",
+    email: "director@eastviewrehab.com",
+    source: "Trade Show",
+    stage: "negotiation",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-04-15",
+    followUpDate: "2026-05-19",
+    value: 24e3,
+    notes: "Discussing contract terms. Decision expected next week."
+  },
+  {
+    id: "sl5",
+    name: "Sunrise Orthopedic Group",
+    phone: "+1-617-555-2005",
+    email: "partnership@sunriseortho.com",
+    source: "Cold Call",
+    stage: "converted",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-04-02",
+    value: 31e3,
+    notes: "Contract signed. Onboarding in progress."
+  },
+  {
+    id: "sl6",
+    name: "Cityview Wellness Hospital",
+    phone: "+1-617-555-2006",
+    email: "admin@cityviewwellness.com",
+    source: "Cold Visit",
+    stage: "new",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-05-12",
+    followUpDate: "2026-05-23",
+    value: 9e3,
+    notes: "First contact made. Brochure delivered."
+  },
+  {
+    id: "sl7",
+    name: "Harborview Medical Partners",
+    phone: "+1-617-555-2007",
+    email: "ops@harborviewmp.com",
+    source: "Referral",
+    stage: "lost",
+    assignedTo: "Marcus Reid",
+    createdAt: "2026-03-20",
+    value: 15e3,
+    notes: "Chose competitor. Re-engage in Q3."
+  }
+];
+const VISIT_HISTORY = [
+  {
+    id: "v1",
+    locationName: "Greenfield General Hospital",
+    address: "450 Greenfield Blvd, Boston MA 02115",
+    visitDate: "2026-05-15",
+    checkInTime: "09:15 AM",
+    checkOutTime: "10:45 AM",
+    duration: "1h 30m",
+    purpose: "Partnership Discussion",
+    outcome: "Interested — scheduled follow-up",
+    contactPerson: "Dr. Patricia Holt",
+    leadsGenerated: 2,
+    notes: "Tour of the rehab wing. Very positive reception."
+  },
+  {
+    id: "v2",
+    locationName: "Northbridge Medical Center",
+    address: "12 Northbridge Ave, Cambridge MA 02141",
+    visitDate: "2026-05-13",
+    checkInTime: "02:00 PM",
+    checkOutTime: "03:20 PM",
+    duration: "1h 20m",
+    purpose: "Proposal Presentation",
+    outcome: "Proposal accepted — moving to negotiation",
+    contactPerson: "Mr. Dale Sutherland",
+    leadsGenerated: 1,
+    notes: "Presented service package. Requested pricing revision."
+  },
+  {
+    id: "v3",
+    locationName: "Maplewood Community Clinic",
+    address: "88 Maple Lane, Somerville MA 02144",
+    visitDate: "2026-05-11",
+    checkInTime: "11:00 AM",
+    checkOutTime: "11:50 AM",
+    duration: "50m",
+    purpose: "Introduction Visit",
+    outcome: "Interested — will review materials",
+    contactPerson: "Dr. Sandra Voss",
+    leadsGenerated: 1,
+    notes: "Left brochure and demo access."
+  },
+  {
+    id: "v4",
+    locationName: "Eastview Rehabilitation Center",
+    address: "200 East Park Rd, Newton MA 02458",
+    visitDate: "2026-05-08",
+    checkInTime: "09:30 AM",
+    checkOutTime: "11:15 AM",
+    duration: "1h 45m",
+    purpose: "Contract Negotiation",
+    outcome: "Revised terms agreed upon",
+    contactPerson: "Ms. Rachel Bloom",
+    leadsGenerated: 3,
+    notes: "Discussed SLA, pricing, and referral commission structure."
+  },
+  {
+    id: "v5",
+    locationName: "Cityview Wellness Hospital",
+    address: "5 City Plaza Dr, Brookline MA 02446",
+    visitDate: "2026-05-06",
+    checkInTime: "03:00 PM",
+    checkOutTime: "03:45 PM",
+    duration: "45m",
+    purpose: "Cold Introduction",
+    outcome: "Handed over brochure — callback requested",
+    contactPerson: "Reception Manager",
+    leadsGenerated: 1,
+    notes: "Front desk visit. Meeting booked for next week."
+  }
+];
+const HOSPITAL_CALL_LOGS = [
+  {
+    id: "c1",
+    contactName: "Dr. Patricia Holt",
+    phone: "+1-617-555-2001",
+    date: "2026-05-16",
+    time: "10:00 AM",
+    duration: "6m 15s",
+    outcome: "callback_requested",
+    notes: "She'll confirm partnership next Friday.",
+    linkedLeadId: "sl1"
+  },
+  {
+    id: "c2",
+    contactName: "Mr. Dale Sutherland",
+    phone: "+1-617-555-2002",
+    date: "2026-05-14",
+    time: "02:30 PM",
+    duration: "8m 40s",
+    outcome: "interested",
+    notes: "Final pricing approved. Contract being drafted.",
+    linkedLeadId: "sl2"
+  },
+  {
+    id: "c3",
+    contactName: "Dr. Sandra Voss",
+    phone: "+1-617-555-2003",
+    date: "2026-05-12",
+    time: "04:15 PM",
+    duration: "3m 22s",
+    outcome: "interested",
+    notes: "Wants a demo session for her team.",
+    linkedLeadId: "sl3"
+  },
+  {
+    id: "c4",
+    contactName: "Harborview Admin",
+    phone: "+1-617-555-2007",
+    date: "2026-05-10",
+    time: "11:00 AM",
+    duration: "2m 05s",
+    outcome: "not_interested",
+    notes: "Signed with competitor PhysioPro.",
+    linkedLeadId: "sl7"
+  },
+  {
+    id: "c5",
+    contactName: "Ms. Rachel Bloom",
+    phone: "+1-617-555-2004",
+    date: "2026-05-09",
+    time: "03:00 PM",
+    duration: "12m 18s",
+    outcome: "converted",
+    notes: "Agreement finalized. Sending onboarding doc.",
+    linkedLeadId: "sl4"
+  }
+];
+const FOLLOW_UP_REMINDERS = [
+  {
+    id: "f1",
+    leadId: "sl1",
+    leadName: "Greenfield General Hospital",
+    phone: "+1-617-555-2001",
+    dueDate: "2026-05-22",
+    dueTime: "10:00 AM",
+    type: "call",
+    priority: "high",
+    notes: "Confirm partnership decision with Dr. Holt.",
+    isCompleted: false
+  },
+  {
+    id: "f2",
+    leadId: "sl2",
+    leadName: "Northbridge Medical Center",
+    phone: "+1-617-555-2002",
+    dueDate: "2026-05-20",
+    dueTime: "02:00 PM",
+    type: "email",
+    priority: "high",
+    notes: "Send revised contract with updated pricing.",
+    isCompleted: false
+  },
+  {
+    id: "f3",
+    leadId: "sl3",
+    leadName: "Maplewood Community Clinic",
+    phone: "+1-617-555-2003",
+    dueDate: "2026-05-21",
+    dueTime: "11:00 AM",
+    type: "visit",
+    priority: "medium",
+    notes: "Demo session for clinical staff.",
+    isCompleted: false
+  },
+  {
+    id: "f4",
+    leadId: "sl6",
+    leadName: "Cityview Wellness Hospital",
+    phone: "+1-617-555-2006",
+    dueDate: "2026-05-23",
+    dueTime: "03:00 PM",
+    type: "whatsapp",
+    priority: "low",
+    notes: "Send promo materials and service brochure.",
+    isCompleted: false
+  },
+  {
+    id: "f5",
+    leadId: "sl5",
+    leadName: "Sunrise Orthopedic Group",
+    phone: "+1-617-555-2005",
+    dueDate: "2026-05-19",
+    dueTime: "09:00 AM",
+    type: "call",
+    priority: "medium",
+    notes: "Onboarding check-in call.",
+    isCompleted: true
+  }
+];
+const GYM_PARTNERSHIPS = [
+  {
+    id: "g1",
+    gymName: "Peak Performance Fitness",
+    location: "120 Beacon St, Boston MA",
+    contactPerson: "Kevin Shaw",
+    phone: "+1-617-555-3001",
+    partnershipType: "referral",
+    status: "active",
+    leadsGenerated: 18,
+    conversions: 7,
+    since: "2026-01-15",
+    nextEvent: "2026-05-25 — Physio Camp"
+  },
+  {
+    id: "g2",
+    gymName: "IronBody CrossFit",
+    location: "45 Huntington Ave, Boston MA",
+    contactPerson: "Diana Moore",
+    phone: "+1-617-555-3002",
+    partnershipType: "session",
+    status: "active",
+    leadsGenerated: 12,
+    conversions: 4,
+    since: "2026-02-10",
+    nextEvent: "2026-05-22 — Injury Prevention Workshop"
+  },
+  {
+    id: "g3",
+    gymName: "Boston Yoga & Wellness",
+    location: "77 Newbury St, Boston MA",
+    contactPerson: "Lisa Nguyen",
+    phone: "+1-617-555-3003",
+    partnershipType: "promo",
+    status: "active",
+    leadsGenerated: 9,
+    conversions: 3,
+    since: "2026-03-01",
+    nextEvent: "2026-06-01 — Wellness Day"
+  },
+  {
+    id: "g4",
+    gymName: "ElevateX Training Center",
+    location: "200 Commonwealth Ave, Boston MA",
+    contactPerson: "Ryan Parks",
+    phone: "+1-617-555-3004",
+    partnershipType: "camp",
+    status: "pending",
+    leadsGenerated: 0,
+    conversions: 0,
+    since: "2026-05-10",
+    nextEvent: "TBD — Awaiting approval"
+  },
+  {
+    id: "g5",
+    gymName: "FitZone Athletics",
+    location: "33 Cambridge St, Cambridge MA",
+    contactPerson: "Amanda Cole",
+    phone: "+1-617-555-3005",
+    partnershipType: "referral",
+    status: "inactive",
+    leadsGenerated: 5,
+    conversions: 1,
+    since: "2025-10-01"
+  }
+];
+const GYM_CALL_LOGS = [
+  {
+    id: "gc1",
+    contactName: "Kevin Shaw",
+    phone: "+1-617-555-3001",
+    date: "2026-05-16",
+    time: "09:00 AM",
+    duration: "5m 30s",
+    outcome: "interested",
+    notes: "Confirmed Physio Camp logistics for May 25."
+  },
+  {
+    id: "gc2",
+    contactName: "Diana Moore",
+    phone: "+1-617-555-3002",
+    date: "2026-05-14",
+    time: "11:30 AM",
+    duration: "7m 12s",
+    outcome: "interested",
+    notes: "Workshop agenda agreed. Will promote to 80 members."
+  },
+  {
+    id: "gc3",
+    contactName: "Ryan Parks",
+    phone: "+1-617-555-3004",
+    date: "2026-05-13",
+    time: "03:15 PM",
+    duration: "4m 45s",
+    outcome: "callback_requested",
+    notes: "Director not available. Will call back Thursday."
+  },
+  {
+    id: "gc4",
+    contactName: "Amanda Cole",
+    phone: "+1-617-555-3005",
+    date: "2026-05-10",
+    time: "10:00 AM",
+    duration: "2m 10s",
+    outcome: "not_interested",
+    notes: "FitZone paused partnerships until new management."
+  }
+];
+const GYM_LEADS = [
+  {
+    id: "gl1",
+    name: "Alex Turner (Referred by Peak Performance)",
+    phone: "+1-617-555-4001",
+    email: "alex.turner@email.com",
+    source: "Gym Referral",
+    stage: "converted",
+    assignedTo: "Sophie Lane",
+    createdAt: "2026-05-02",
+    value: 1800,
+    notes: "Runner's knee. 6-session physio plan started."
+  },
+  {
+    id: "gl2",
+    name: "Priya Kapoor (IronBody member)",
+    phone: "+1-617-555-4002",
+    email: "priya.k@email.com",
+    source: "Gym Referral",
+    stage: "qualified",
+    assignedTo: "Sophie Lane",
+    createdAt: "2026-05-08",
+    followUpDate: "2026-05-21",
+    value: 1400,
+    notes: "Shoulder impingement. Assessment booked."
+  },
+  {
+    id: "gl3",
+    name: "Chris Bennett (Boston Yoga)",
+    phone: "+1-617-555-4003",
+    email: "chris.b@email.com",
+    source: "Gym Referral",
+    stage: "contacted",
+    assignedTo: "Sophie Lane",
+    createdAt: "2026-05-10",
+    followUpDate: "2026-05-22",
+    value: 1200,
+    notes: "Lower back pain. Waiting for appointment confirmation."
+  },
+  {
+    id: "gl4",
+    name: "Maya Rodriguez (Peak Performance)",
+    phone: "+1-617-555-4004",
+    email: "maya.r@email.com",
+    source: "Gym Referral",
+    stage: "proposal",
+    assignedTo: "Sophie Lane",
+    createdAt: "2026-05-12",
+    followUpDate: "2026-05-20",
+    value: 2e3,
+    notes: "Post-marathon knee recovery program proposed."
+  },
+  {
+    id: "gl5",
+    name: "Jordan White (IronBody)",
+    phone: "+1-617-555-4005",
+    email: "jordan.w@email.com",
+    source: "Workshop",
+    stage: "new",
+    assignedTo: "Sophie Lane",
+    createdAt: "2026-05-15",
+    followUpDate: "2026-05-23",
+    value: 900,
+    notes: "Attended injury prevention workshop. Interested in assessment."
+  }
+];
+const GYM_ACTIVITY_LOGS = [
+  {
+    id: "a1",
+    date: "2026-05-16",
+    time: "09:00 AM",
+    type: "call",
+    description: "Confirmed Physio Camp with Peak Performance Fitness",
+    outcome: "Camp confirmed for May 25",
+    linkedTo: "Peak Performance Fitness"
+  },
+  {
+    id: "a2",
+    date: "2026-05-15",
+    time: "02:00 PM",
+    type: "visit",
+    description: "Visited IronBody CrossFit to discuss workshop logistics",
+    outcome: "80 members registered for workshop",
+    linkedTo: "IronBody CrossFit"
+  },
+  {
+    id: "a3",
+    date: "2026-05-13",
+    time: "11:00 AM",
+    type: "demo",
+    description: "Live physio demo session at Boston Yoga & Wellness",
+    outcome: "3 new leads generated",
+    linkedTo: "Boston Yoga & Wellness"
+  },
+  {
+    id: "a4",
+    date: "2026-05-12",
+    time: "04:30 PM",
+    type: "email",
+    description: "Sent partnership proposal to ElevateX Training Center",
+    outcome: "Awaiting response",
+    linkedTo: "ElevateX Training Center"
+  },
+  {
+    id: "a5",
+    date: "2026-05-10",
+    time: "10:15 AM",
+    type: "meeting",
+    description: "Weekly sales review — Gym outreach performance Q2",
+    outcome: "Targets revised upward 15%",
+    linkedTo: "Internal"
+  },
+  {
+    id: "a6",
+    date: "2026-05-08",
+    time: "01:00 PM",
+    type: "whatsapp",
+    description: "Sent physio promo flyer to Boston Yoga group",
+    outcome: "2 enquiries received",
+    linkedTo: "Boston Yoga & Wellness"
+  }
+];
+const PROMO_TRACKER_DATA = [
+  { month: "Jan", referrals: 8, conversions: 3, sessions: 5 },
+  { month: "Feb", referrals: 12, conversions: 5, sessions: 8 },
+  { month: "Mar", referrals: 15, conversions: 6, sessions: 10 },
+  { month: "Apr", referrals: 22, conversions: 9, sessions: 14 },
+  { month: "May", referrals: 31, conversions: 14, sessions: 20 }
+];
+const MOCK_PATIENT_PROFILE = {
+  id: "pat001",
+  patientId: "PSY-2024-011",
+  name: "Jordan Mitchell",
+  email: "jordan.mitchell@email.com",
+  phone: "+1-617-555-8001",
+  dob: "1990-04-12",
+  gender: "Male",
+  bloodGroup: "A+",
+  address: "18 Riverside Drive, Boston MA 02134",
+  medicalHistory: "Chronic lower back pain, ACL reconstruction (2022), mild hypertension",
+  emergencyContactName: "Sarah Mitchell",
+  emergencyContactPhone: "+1-617-555-8002",
+  insurance: "BlueCross BlueShield PPO"
+};
+const PATIENT_APPOINTMENTS = [
+  {
+    id: "pa1",
+    doctorName: "Dr. James Reeves",
+    doctorSpecialization: "Physical Medicine & Rehabilitation",
+    department: "PMR",
+    date: "2026-05-22",
+    time: "10:00 AM",
+    status: "upcoming",
+    type: "Follow-up Consultation",
+    location: "Room 204, PMR Wing",
+    notes: "Bring latest X-ray and physiotherapy progress chart."
+  },
+  {
+    id: "pa2",
+    doctorName: "Dr. Priya Sharma",
+    doctorSpecialization: "Physiotherapy",
+    department: "PMR",
+    date: "2026-05-27",
+    time: "02:30 PM",
+    status: "upcoming",
+    type: "Physiotherapy Session",
+    location: "Physio Lab, Ground Floor"
+  },
+  {
+    id: "pa3",
+    doctorName: "Dr. James Reeves",
+    doctorSpecialization: "Physical Medicine & Rehabilitation",
+    department: "PMR",
+    date: "2026-05-08",
+    time: "09:30 AM",
+    status: "completed",
+    type: "Initial Consultation",
+    location: "Room 204, PMR Wing",
+    notes: "MRI suggested. Pain scale: 6/10."
+  },
+  {
+    id: "pa4",
+    doctorName: "Dr. Aisha Khan",
+    doctorSpecialization: "General Medicine",
+    department: "General",
+    date: "2026-04-20",
+    time: "11:00 AM",
+    status: "completed",
+    type: "General Checkup",
+    location: "Room 108, General Wing"
+  },
+  {
+    id: "pa5",
+    doctorName: "Dr. Priya Sharma",
+    doctorSpecialization: "Physiotherapy",
+    department: "PMR",
+    date: "2026-04-10",
+    time: "03:00 PM",
+    status: "cancelled",
+    type: "Physiotherapy Session",
+    location: "Physio Lab, Ground Floor",
+    notes: "Patient cancelled due to travel."
+  }
+];
+const AVAILABLE_SLOTS = [
+  {
+    id: "s1",
+    date: "2026-05-22",
+    time: "09:00 AM",
+    doctorName: "Dr. James Reeves",
+    doctorSpecialization: "PMR",
+    department: "PMR",
+    isAvailable: true
+  },
+  {
+    id: "s2",
+    date: "2026-05-22",
+    time: "11:00 AM",
+    doctorName: "Dr. Priya Sharma",
+    doctorSpecialization: "Physiotherapy",
+    department: "PMR",
+    isAvailable: true
+  },
+  {
+    id: "s3",
+    date: "2026-05-23",
+    time: "10:00 AM",
+    doctorName: "Dr. James Reeves",
+    doctorSpecialization: "PMR",
+    department: "PMR",
+    isAvailable: true
+  },
+  {
+    id: "s4",
+    date: "2026-05-23",
+    time: "02:00 PM",
+    doctorName: "Dr. Aisha Khan",
+    doctorSpecialization: "General Medicine",
+    department: "General",
+    isAvailable: true
+  },
+  {
+    id: "s5",
+    date: "2026-05-24",
+    time: "09:30 AM",
+    doctorName: "Dr. Michael Chen",
+    doctorSpecialization: "Orthopedic Rehab",
+    department: "PMR",
+    isAvailable: true
+  },
+  {
+    id: "s6",
+    date: "2026-05-24",
+    time: "03:00 PM",
+    doctorName: "Dr. Priya Sharma",
+    doctorSpecialization: "Physiotherapy",
+    department: "PMR",
+    isAvailable: false
+  }
+];
+const PATIENT_REPORTS = [
+  {
+    id: "r1",
+    testName: "MRI Lumbar Spine",
+    category: "Radiology",
+    orderedBy: "Dr. James Reeves",
+    date: "2026-05-10",
+    status: "ready",
+    fileSize: "4.2 MB",
+    isCritical: false,
+    summary: "L4-L5 disc herniation with mild nerve impingement. Physiotherapy recommended."
+  },
+  {
+    id: "r2",
+    testName: "Complete Blood Count (CBC)",
+    category: "Hematology",
+    orderedBy: "Dr. Aisha Khan",
+    date: "2026-04-21",
+    status: "ready",
+    fileSize: "0.8 MB",
+    isCritical: false,
+    summary: "All values within normal range. Mild vitamin D deficiency noted."
+  },
+  {
+    id: "r3",
+    testName: "X-Ray Knee (Right)",
+    category: "Radiology",
+    orderedBy: "Dr. James Reeves",
+    date: "2026-05-05",
+    status: "ready",
+    fileSize: "1.5 MB",
+    isCritical: false,
+    summary: "Mild joint space narrowing. ACL graft appears intact."
+  },
+  {
+    id: "r4",
+    testName: "Blood Glucose Fasting",
+    category: "Biochemistry",
+    orderedBy: "Dr. Aisha Khan",
+    date: "2026-05-15",
+    status: "processing",
+    isCritical: false
+  },
+  {
+    id: "r5",
+    testName: "Electromyography (EMG)",
+    category: "Neurology",
+    orderedBy: "Dr. James Reeves",
+    date: "2026-05-18",
+    status: "pending",
+    isCritical: false
+  }
+];
+const PATIENT_PRESCRIPTIONS = [
+  {
+    id: "prx1",
+    doctorName: "Dr. James Reeves",
+    date: "2026-05-08",
+    diagnosis: "Lumbar disc herniation with radiculopathy",
+    status: "active",
+    validUntil: "2026-06-08",
+    medicines: [
+      {
+        name: "Diclofenac Sodium 75mg",
+        dosage: "75mg",
+        frequency: "Twice daily",
+        duration: "4 weeks",
+        instructions: "Take after food",
+        refillsLeft: 2
+      },
+      {
+        name: "Pregabalin 75mg",
+        dosage: "75mg",
+        frequency: "Once at night",
+        duration: "6 weeks",
+        instructions: "Do not drive after taking",
+        refillsLeft: 1
+      },
+      {
+        name: "Vitamin D3 60,000 IU",
+        dosage: "60,000 IU",
+        frequency: "Once weekly",
+        duration: "8 weeks",
+        instructions: "Take after fatty meal",
+        refillsLeft: 3
+      }
+    ]
+  },
+  {
+    id: "prx2",
+    doctorName: "Dr. Aisha Khan",
+    date: "2026-04-20",
+    diagnosis: "Mild hypertension, preventive management",
+    status: "active",
+    validUntil: "2026-07-20",
+    medicines: [
+      {
+        name: "Amlodipine 5mg",
+        dosage: "5mg",
+        frequency: "Once daily",
+        duration: "3 months",
+        instructions: "Take in the morning",
+        refillsLeft: 2
+      }
+    ]
+  },
+  {
+    id: "prx3",
+    doctorName: "Dr. James Reeves",
+    date: "2026-03-01",
+    diagnosis: "Post-ACL rehabilitation",
+    status: "completed",
+    validUntil: "2026-04-01",
+    medicines: [
+      {
+        name: "Ibuprofen 400mg",
+        dosage: "400mg",
+        frequency: "Three times daily",
+        duration: "2 weeks",
+        instructions: "Take with food. Stop if stomach upset.",
+        refillsLeft: 0
+      }
+    ]
+  }
+];
+const THERAPY_SESSIONS = [
+  {
+    id: "ts1",
+    sessionNumber: 1,
+    totalSessions: 12,
+    date: "2026-04-15",
+    therapistName: "Dr. Priya Sharma",
+    sessionType: "Initial Assessment & Mobilization",
+    progressPercent: 10,
+    notes: "Baseline assessment completed. Severe stiffness in L4-L5 region. Started with gentle mobilization.",
+    exercises: ["Knee-to-chest stretches", "Pelvic tilts", "Walking 10 min"],
+    feedback: "Patient cooperative. Pain level 8/10 initially, reduced to 6/10 post-session.",
+    painLevel: 8,
+    mobility: 3,
+    strength: 4
+  },
+  {
+    id: "ts2",
+    sessionNumber: 3,
+    totalSessions: 12,
+    date: "2026-04-24",
+    therapistName: "Dr. Priya Sharma",
+    sessionType: "Core Strengthening Phase 1",
+    progressPercent: 28,
+    notes: "Pain reduced significantly. Introduced core stability exercises. Good compliance.",
+    exercises: [
+      "Bird-dog exercise",
+      "Dead bug",
+      "Cat-cow stretch",
+      "Hip bridges"
+    ],
+    feedback: "Excellent improvement in 2 weeks. Mobility increasing.",
+    painLevel: 5,
+    mobility: 5,
+    strength: 5
+  },
+  {
+    id: "ts3",
+    sessionNumber: 6,
+    totalSessions: 12,
+    date: "2026-05-05",
+    therapistName: "Dr. Priya Sharma",
+    sessionType: "Functional Movement Training",
+    progressPercent: 52,
+    notes: "Patient performing daily activities with minimal pain. Introducing functional training.",
+    exercises: [
+      "Squat progression",
+      "Romanian deadlift with light weight",
+      "Lateral band walks",
+      "Standing balance drills"
+    ],
+    feedback: "Halfway through program. Remarkable progress. Pain 3/10.",
+    painLevel: 3,
+    mobility: 7,
+    strength: 6
+  },
+  {
+    id: "ts4",
+    sessionNumber: 8,
+    totalSessions: 12,
+    date: "2026-05-12",
+    therapistName: "Dr. Priya Sharma",
+    sessionType: "Advanced Strengthening & Flexibility",
+    progressPercent: 70,
+    notes: "Returned to office work without discomfort. Progressing to advanced training.",
+    exercises: [
+      "Bulgarian split squat",
+      "Single-leg deadlift",
+      "Resistance band rows",
+      "Yoga-based flexibility"
+    ],
+    feedback: "Near full mobility. Continuing strengthening phase.",
+    painLevel: 2,
+    mobility: 8,
+    strength: 8
+  }
+];
+const PATIENT_NOTIFICATIONS = [
+  {
+    id: "pn1",
+    type: "appointment",
+    title: "Appointment Reminder",
+    message: "Your appointment with Dr. James Reeves is scheduled for May 22 at 10:00 AM.",
+    date: "2026-05-19",
+    time: "09:00 AM",
+    isRead: false,
+    priority: "high"
+  },
+  {
+    id: "pn2",
+    type: "report",
+    title: "MRI Report Ready",
+    message: "Your MRI Lumbar Spine report is now available. Visit the Reports section to view.",
+    date: "2026-05-10",
+    time: "03:45 PM",
+    isRead: false,
+    priority: "high"
+  },
+  {
+    id: "pn3",
+    type: "medicine",
+    title: "Medicine Refill Reminder",
+    message: "Pregabalin 75mg has 1 refill remaining. Contact your doctor to renew the prescription.",
+    date: "2026-05-18",
+    time: "08:00 AM",
+    isRead: false,
+    priority: "medium"
+  },
+  {
+    id: "pn4",
+    type: "therapy",
+    title: "Physiotherapy Session Scheduled",
+    message: "Session #9 with Dr. Priya Sharma on May 27 at 2:30 PM. Wear comfortable clothing.",
+    date: "2026-05-17",
+    time: "10:00 AM",
+    isRead: true,
+    priority: "medium"
+  },
+  {
+    id: "pn5",
+    type: "billing",
+    title: "Invoice Due",
+    message: "Invoice INV-2026-008 for $420 is due on May 25. Pay online to avoid late fee.",
+    date: "2026-05-15",
+    time: "11:00 AM",
+    isRead: true,
+    priority: "medium"
+  },
+  {
+    id: "pn6",
+    type: "promotion",
+    title: "Summer Wellness Package",
+    message: "Enjoy 20% off on a 10-session physiotherapy package this June. Offer valid till June 30.",
+    date: "2026-05-14",
+    time: "02:00 PM",
+    isRead: true,
+    priority: "low"
+  },
+  {
+    id: "pn7",
+    type: "report",
+    title: "X-Ray Report Uploaded",
+    message: "Your X-Ray Knee (Right) report has been uploaded and is ready for review.",
+    date: "2026-05-06",
+    time: "04:15 PM",
+    isRead: true,
+    priority: "medium"
+  }
+];
+const PATIENT_INVOICES = [
+  {
+    id: "inv1",
+    invoiceNumber: "INV-2026-008",
+    date: "2026-05-15",
+    dueDate: "2026-05-25",
+    description: "Physiotherapy sessions + consultation",
+    amount: 420,
+    status: "pending",
+    items: [
+      { name: "Follow-up Consultation (Dr. Reeves)", quantity: 1, price: 120 },
+      { name: "Physiotherapy Session × 2", quantity: 2, price: 150 }
+    ]
+  },
+  {
+    id: "inv2",
+    invoiceNumber: "INV-2026-005",
+    date: "2026-04-20",
+    dueDate: "2026-04-30",
+    description: "General consultation + CBC",
+    amount: 185,
+    status: "paid",
+    items: [
+      { name: "General Checkup (Dr. Khan)", quantity: 1, price: 100 },
+      { name: "CBC Blood Test", quantity: 1, price: 85 }
+    ]
+  },
+  {
+    id: "inv3",
+    invoiceNumber: "INV-2026-003",
+    date: "2026-04-08",
+    dueDate: "2026-04-18",
+    description: "Initial PMR consultation + X-Ray",
+    amount: 310,
+    status: "paid",
+    items: [
+      { name: "Initial Consultation (Dr. Reeves)", quantity: 1, price: 150 },
+      { name: "X-Ray Knee (Right)", quantity: 1, price: 160 }
+    ]
+  },
+  {
+    id: "inv4",
+    invoiceNumber: "INV-2026-001",
+    date: "2026-03-01",
+    dueDate: "2026-03-11",
+    description: "Physiotherapy assessment + session",
+    amount: 240,
+    status: "paid",
+    items: [
+      { name: "Physiotherapy Assessment", quantity: 1, price: 90 },
+      { name: "Physiotherapy Session", quantity: 1, price: 150 }
+    ]
+  },
+  {
+    id: "inv5",
+    invoiceNumber: "INV-2026-009",
+    date: "2026-05-10",
+    dueDate: "2026-05-17",
+    description: "MRI Lumbar Spine",
+    amount: 580,
+    status: "overdue",
+    items: [{ name: "MRI Lumbar Spine (Full)", quantity: 1, price: 580 }]
+  }
+];
 var jt = (n2) => {
   switch (n2) {
     case "success":
@@ -72488,6 +73756,1382 @@ var $e = reactExports.forwardRef(function(e3, t2) {
     })) : null;
   }));
 });
+const STATUS_COLORS$3 = {
+  upcoming: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  completed: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  cancelled: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
+  in_progress: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300"
+};
+const NEXT_7_DAYS = Array.from({ length: 7 }, (_2, i) => {
+  const d2 = /* @__PURE__ */ new Date("2026-05-19");
+  d2.setDate(d2.getDate() + i);
+  return d2.toISOString().slice(0, 10);
+});
+function PatientAppointments() {
+  const [cancelId, setCancelId] = reactExports.useState(null);
+  const [cancelled, setCancelled] = reactExports.useState(/* @__PURE__ */ new Set());
+  const [selectedDay, setSelectedDay] = reactExports.useState(NEXT_7_DAYS[0]);
+  const [selectedSlot, setSelectedSlot] = reactExports.useState(null);
+  const confirmCancel = () => {
+    if (cancelId) {
+      setCancelled((prev) => /* @__PURE__ */ new Set([...prev, cancelId]));
+      setCancelId(null);
+      ue.success("Appointment cancelled successfully.");
+    }
+  };
+  const bookAppointment = () => {
+    if (!selectedSlot) return ue.warning("Please select a time slot.");
+    ue.success("Appointment booked successfully!");
+    setSelectedSlot(null);
+  };
+  const slotsForDay = AVAILABLE_SLOTS.filter((s2) => s2.date === selectedDay);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "Appointments" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground mb-3", children: "Upcoming Appointments" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
+        PATIENT_APPOINTMENTS.filter(
+          (a2) => a2.status === "upcoming" && !cancelled.has(a2.id)
+        ).map((apt, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            "data-ocid": `patient.appointment.item.${i + 1}`,
+            className: "rounded-xl border border-border bg-card p-5 flex items-start gap-4",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-5 h-5 text-primary" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-0.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-foreground", children: apt.doctorName }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${STATUS_COLORS$3[apt.status]}`,
+                      children: apt.status
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-muted-foreground", children: [
+                  apt.doctorSpecialization,
+                  " · ",
+                  apt.department
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 mt-2 text-sm", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1 text-foreground font-medium", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-3.5 h-3.5" }),
+                    apt.date,
+                    " at ",
+                    apt.time
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1 text-muted-foreground", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-3.5 h-3.5" }),
+                    apt.location
+                  ] })
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": `patient.appointment.cancel_button.${i + 1}`,
+                  onClick: () => setCancelId(apt.id),
+                  className: "shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium text-destructive border border-destructive/30 hover:bg-destructive/10 transition-colors",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-3.5 h-3.5" }),
+                    "Cancel"
+                  ]
+                }
+              )
+            ]
+          },
+          apt.id
+        )),
+        PATIENT_APPOINTMENTS.filter(
+          (a2) => a2.status === "upcoming" && !cancelled.has(a2.id)
+        ).length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "data-ocid": "patient.appointment.empty_state",
+            className: "text-center py-8 text-muted-foreground",
+            children: "No upcoming appointments."
+          }
+        )
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground mb-3", children: "Book New Appointment" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-border bg-card p-5 space-y-5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-medium text-muted-foreground mb-2", children: "Select Date" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-2 overflow-x-auto pb-1", children: NEXT_7_DAYS.map((day) => {
+            const d2 = new Date(day);
+            const label = d2.toLocaleDateString("en-US", {
+              weekday: "short"
+            });
+            const num = d2.getDate();
+            return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                type: "button",
+                "data-ocid": `patient.booking.day.${num}`,
+                onClick: () => {
+                  setSelectedDay(day);
+                  setSelectedSlot(null);
+                },
+                className: `flex flex-col items-center px-4 py-3 rounded-xl border text-sm font-medium transition-all shrink-0 ${selectedDay === day ? "border-primary bg-primary text-primary-foreground" : "border-border bg-background text-foreground hover:bg-muted"}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs opacity-70", children: label }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-lg font-bold", children: num })
+                ]
+              },
+              day
+            );
+          }) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-medium text-muted-foreground mb-2", children: "Available Slots" }),
+          slotsForDay.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "No slots available for this date." }) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 sm:grid-cols-3 gap-2", children: slotsForDay.map((slot) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `patient.booking.slot.${slot.id}`,
+              disabled: !slot.isAvailable,
+              onClick: () => setSelectedSlot(slot.id),
+              className: `p-3 rounded-xl border text-left text-sm transition-all ${!slot.isAvailable ? "opacity-40 cursor-not-allowed border-border bg-muted/30" : selectedSlot === slot.id ? "border-primary bg-primary/10 text-primary" : "border-border bg-background hover:bg-muted"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-semibold", children: slot.time }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: slot.doctorName }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: slot.doctorSpecialization })
+              ]
+            },
+            slot.id
+          )) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "patient.booking.submit_button",
+            onClick: bookAppointment,
+            className: "inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-4 h-4" }),
+              "Book Appointment"
+            ]
+          }
+        )
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground mb-3", children: "Past Appointments" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Doctor" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Type" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Date" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Status" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: PATIENT_APPOINTMENTS.filter(
+          (a2) => a2.status !== "upcoming"
+        ).map((apt, _i2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            className: "border-b border-border last:border-0",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 font-medium text-foreground", children: apt.doctorName }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: apt.type }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: apt.date }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium capitalize ${STATUS_COLORS$3[apt.status]}`,
+                  children: apt.status
+                }
+              ) })
+            ]
+          },
+          apt.id
+        )) })
+      ] }) }) })
+    ] }),
+    cancelId && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "data-ocid": "patient.cancel_appointment.dialog",
+        className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card rounded-2xl p-6 w-[400px] max-w-[90vw] border border-border shadow-elevation-high", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-bold font-display text-foreground mb-2", children: "Cancel Appointment?" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-5", children: "Are you sure you want to cancel this appointment? This action cannot be undone." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "patient.cancel_appointment.confirm_button",
+                onClick: confirmCancel,
+                className: "flex-1 py-2 rounded-xl bg-destructive text-white text-sm font-semibold hover:opacity-90 transition-opacity",
+                children: "Yes, Cancel"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "patient.cancel_appointment.cancel_button",
+                onClick: () => setCancelId(null),
+                className: "flex-1 py-2 rounded-xl border border-border bg-background text-foreground text-sm font-semibold hover:bg-muted transition-colors",
+                children: "Keep It"
+              }
+            )
+          ] })
+        ] })
+      }
+    )
+  ] });
+}
+const STATUS_COLORS$2 = {
+  paid: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  pending: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  overdue: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300"
+};
+const totalPaid = PATIENT_INVOICES.filter((i) => i.status === "paid").reduce(
+  (s2, i) => s2 + i.amount,
+  0
+);
+const totalPending = PATIENT_INVOICES.filter(
+  (i) => i.status === "pending"
+).reduce((s2, i) => s2 + i.amount, 0);
+const lastPayment = PATIENT_INVOICES.filter((i) => i.status === "paid").sort(
+  (a2, b2) => b2.date.localeCompare(a2.date)
+)[0];
+function PatientBilling() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "Billing & Invoices" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          "data-ocid": "patient.billing.stat.paid",
+          className: "rounded-xl border border-border bg-card p-5",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Total Paid" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-3xl font-bold font-display text-emerald-600 dark:text-emerald-400 mt-1", children: [
+              "$",
+              totalPaid.toLocaleString()
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          "data-ocid": "patient.billing.stat.pending",
+          className: "rounded-xl border border-border bg-card p-5",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Pending Amount" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-3xl font-bold font-display text-amber-600 dark:text-amber-400 mt-1", children: [
+              "$",
+              totalPending.toLocaleString()
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          "data-ocid": "patient.billing.stat.last_payment",
+          className: "rounded-xl border border-border bg-card p-5",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Last Payment" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-3xl font-bold font-display text-foreground mt-1", children: (lastPayment == null ? void 0 : lastPayment.date) ?? "—" })
+          ]
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-5 py-4 border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground", children: "Invoice History" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Invoice #" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Date" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Description" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-right font-semibold text-muted-foreground", children: "Amount" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Status" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-center font-semibold text-muted-foreground", children: "Action" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: PATIENT_INVOICES.map((inv, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `patient.invoice.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Receipt, { className: "w-4 h-4 text-muted-foreground" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: inv.invoiceNumber })
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: inv.date }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: inv.description }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3 text-right font-semibold text-foreground", children: [
+                "$",
+                inv.amount.toLocaleString()
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium capitalize ${STATUS_COLORS$2[inv.status]}`,
+                  children: inv.status
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": `patient.invoice.download_button.${i + 1}`,
+                  onClick: () => ue.success(`Downloading ${inv.invoiceNumber}...`),
+                  className: "inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border border-border bg-background hover:bg-muted transition-colors",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Download, { className: "w-3.5 h-3.5" }),
+                    "PDF"
+                  ]
+                }
+              ) })
+            ]
+          },
+          inv.id
+        )) })
+      ] }) })
+    ] })
+  ] });
+}
+const upcomingCount = PATIENT_APPOINTMENTS.filter(
+  (a2) => a2.status === "upcoming"
+).length;
+const activePrescriptions = PATIENT_PRESCRIPTIONS.filter(
+  (p2) => p2.status === "active"
+).length;
+const unreadNotifications = PATIENT_NOTIFICATIONS.filter(
+  (n2) => !n2.isRead
+).length;
+PATIENT_INVOICES.filter(
+  (i) => i.status === "pending"
+).length;
+const quickLinks = [
+  {
+    label: "Book Appointment",
+    icon: Calendar,
+    to: "/patient/appointments",
+    color: "bg-primary/10 text-primary",
+    desc: "Schedule your next visit"
+  },
+  {
+    label: "View Reports",
+    icon: FileText,
+    to: "/patient/reports",
+    color: "bg-accent/10 text-accent",
+    desc: "Lab & imaging results"
+  },
+  {
+    label: "Prescriptions",
+    icon: Pill,
+    to: "/patient/prescriptions",
+    color: "bg-secondary/10 text-secondary",
+    desc: "Active medicines & refills"
+  },
+  {
+    label: "Therapy Progress",
+    icon: TrendingUp,
+    to: "/patient/progress",
+    color: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400",
+    desc: "Track your rehab journey"
+  },
+  {
+    label: "Billing History",
+    icon: Receipt,
+    to: "/patient/billing",
+    color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
+    desc: "Invoices & payment history"
+  },
+  {
+    label: "Notifications",
+    icon: Bell,
+    to: "/patient/notifications",
+    color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400",
+    desc: "Updates & reminders"
+  }
+];
+function PatientDashboard() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-2xl bg-gradient-to-r from-primary/90 to-accent/80 p-6 text-primary-foreground", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "w-7 h-7 text-white" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-medium opacity-80", children: "Patient Portal" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "text-2xl font-bold font-display tracking-tight", children: [
+          "Welcome back, ",
+          MOCK_PATIENT_PROFILE.name
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm opacity-70 mt-0.5", children: [
+          "ID: ",
+          MOCK_PATIENT_PROFILE.patientId,
+          " ·",
+          " ",
+          MOCK_PATIENT_PROFILE.bloodGroup
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-4", children: [
+      {
+        label: "Upcoming Appointments",
+        value: upcomingCount,
+        icon: Calendar,
+        color: "bg-primary/10",
+        iconColor: "text-primary",
+        ocid: "patient.stat.appointments"
+      },
+      {
+        label: "Active Prescriptions",
+        value: activePrescriptions,
+        icon: Pill,
+        color: "bg-accent/10",
+        iconColor: "text-accent",
+        ocid: "patient.stat.prescriptions"
+      },
+      {
+        label: "Pending Reports",
+        value: 2,
+        icon: ClipboardList,
+        color: "bg-secondary/10",
+        iconColor: "text-secondary",
+        ocid: "patient.stat.reports"
+      },
+      {
+        label: "Unread Notifications",
+        value: unreadNotifications,
+        icon: Bell,
+        color: "bg-purple-100 dark:bg-purple-900/30",
+        iconColor: "text-purple-600 dark:text-purple-400",
+        ocid: "patient.stat.notifications"
+      }
+    ].map((s2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "data-ocid": s2.ocid,
+        className: "rounded-xl border border-border bg-card p-5",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: s2.label }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-3xl font-bold font-display text-foreground mt-1", children: s2.value })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: `w-11 h-11 rounded-xl ${s2.color} flex items-center justify-center`,
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(s2.icon, { className: `w-5 h-5 ${s2.iconColor}` })
+            }
+          )
+        ] })
+      },
+      s2.label
+    )) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground mb-3", children: "Quick Access" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-3 gap-4", children: quickLinks.map((link, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        Link,
+        {
+          to: link.to,
+          "data-ocid": `patient.quick_link.item.${i + 1}`,
+          className: "flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:shadow-elevation-medium hover:-translate-y-0.5 transition-all",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: `w-10 h-10 rounded-xl ${link.color} flex items-center justify-center shrink-0`,
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(link.icon, { className: "w-5 h-5" })
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground text-sm", children: link.label }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: link.desc })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "w-4 h-4 text-muted-foreground shrink-0" })
+          ]
+        },
+        link.to
+      )) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground mb-3", children: "Next Appointment" }),
+      PATIENT_APPOINTMENTS.filter((a2) => a2.status === "upcoming").slice(0, 1).map((apt) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          className: "rounded-xl border border-border bg-card p-5 flex items-center gap-4",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-6 h-6 text-primary" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-semibold text-foreground", children: apt.doctorName }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-muted-foreground", children: [
+                apt.type,
+                " · ",
+                apt.department
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm font-medium text-primary mt-1", children: [
+                apt.date,
+                " at ",
+                apt.time
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "inline-flex px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300", children: "Upcoming" })
+          ]
+        },
+        apt.id
+      ))
+    ] })
+  ] });
+}
+const TYPE_META = {
+  appointment: {
+    icon: Calendar,
+    bg: "bg-blue-100 dark:bg-blue-900/30",
+    iconColor: "text-blue-600 dark:text-blue-400",
+    label: "Appointment"
+  },
+  medicine: {
+    icon: Pill,
+    bg: "bg-emerald-100 dark:bg-emerald-900/30",
+    iconColor: "text-emerald-600 dark:text-emerald-400",
+    label: "Medicine"
+  },
+  report: {
+    icon: FileText,
+    bg: "bg-purple-100 dark:bg-purple-900/30",
+    iconColor: "text-purple-600 dark:text-purple-400",
+    label: "Report"
+  },
+  promotion: {
+    icon: Megaphone,
+    bg: "bg-amber-100 dark:bg-amber-900/30",
+    iconColor: "text-amber-600 dark:text-amber-400",
+    label: "Promotion"
+  },
+  billing: {
+    icon: Receipt,
+    bg: "bg-red-100 dark:bg-red-900/30",
+    iconColor: "text-red-600 dark:text-red-400",
+    label: "Billing"
+  },
+  therapy: {
+    icon: Activity,
+    bg: "bg-primary/10",
+    iconColor: "text-primary",
+    label: "Therapy"
+  }
+};
+const FILTER_TABS = [
+  "All",
+  "appointment",
+  "medicine",
+  "report",
+  "promotion",
+  "billing"
+];
+function timeAgo(date2, time2) {
+  const then = /* @__PURE__ */ new Date(
+    `${date2}T${time2.replace(" AM", "").replace(" PM", "")}`
+  );
+  const diff = Date.now() - then.getTime();
+  const h2 = Math.floor(diff / 36e5);
+  if (h2 < 24) return `${h2}h ago`;
+  return `${Math.floor(h2 / 24)}d ago`;
+}
+function PatientNotifications() {
+  const [notifications, setNotifications] = reactExports.useState(PATIENT_NOTIFICATIONS);
+  const [activeFilter, setActiveFilter] = reactExports.useState("All");
+  const unread = notifications.filter((n2) => !n2.isRead).length;
+  const markAllRead = () => {
+    setNotifications((prev) => prev.map((n2) => ({ ...n2, isRead: true })));
+    ue.success("All notifications marked as read.");
+  };
+  const markRead = (id2) => {
+    setNotifications(
+      (prev) => prev.map((n2) => n2.id === id2 ? { ...n2, isRead: true } : n2)
+    );
+  };
+  const filtered = activeFilter === "All" ? notifications : notifications.filter((n2) => n2.type === activeFilter);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-5", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "Notifications" }),
+        unread > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "span",
+          {
+            "data-ocid": "patient.notifications.unread_badge",
+            className: "inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold",
+            children: unread
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "button",
+        {
+          type: "button",
+          "data-ocid": "patient.notifications.mark_all_read",
+          onClick: markAllRead,
+          className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium border border-border bg-background hover:bg-muted transition-colors",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(CheckCheck, { className: "w-4 h-4" }),
+            "Mark All Read"
+          ]
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-1 flex-wrap", children: FILTER_TABS.map((tab) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "button",
+      {
+        type: "button",
+        "data-ocid": `patient.notifications.filter.${tab.toLowerCase()}`,
+        onClick: () => setActiveFilter(tab),
+        className: `px-3 py-1.5 rounded-lg text-xs font-medium transition-all capitalize ${activeFilter === tab ? "bg-primary text-primary-foreground" : "border border-border text-muted-foreground hover:text-foreground hover:bg-muted"}`,
+        children: tab === "All" ? "All" : TYPE_META[tab].label
+      },
+      tab
+    )) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
+      filtered.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "div",
+        {
+          "data-ocid": "patient.notifications.empty_state",
+          className: "text-center py-8 text-muted-foreground",
+          children: "No notifications found."
+        }
+      ),
+      filtered.map((n2, i) => {
+        const meta = TYPE_META[n2.type];
+        const Icon2 = meta.icon;
+        return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": `patient.notification.item.${i + 1}`,
+            onClick: () => markRead(n2.id),
+            className: `w-full text-left flex items-start gap-4 p-4 rounded-xl border transition-all hover:shadow-elevation-subtle ${n2.isRead ? "border-border bg-card" : "border-primary/30 bg-primary/5"}`,
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  className: `w-10 h-10 rounded-xl ${meta.bg} flex items-center justify-center shrink-0`,
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: `w-5 h-5 ${meta.iconColor}` })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-foreground text-sm", children: n2.title }),
+                  !n2.isRead && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary shrink-0" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-0.5 leading-relaxed", children: n2.message }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground mt-1 block", children: timeAgo(n2.date, n2.time) })
+              ] })
+            ]
+          },
+          n2.id
+        );
+      })
+    ] })
+  ] });
+}
+const STATUS_COLORS$1 = {
+  active: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  completed: "bg-muted text-muted-foreground",
+  refill_needed: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300"
+};
+function PatientPrescriptions() {
+  const [refillTarget, setRefillTarget] = reactExports.useState(null);
+  const [refilled, setRefilled] = reactExports.useState(/* @__PURE__ */ new Set());
+  const confirmRefill = () => {
+    if (!refillTarget) return;
+    setRefilled(
+      (prev) => /* @__PURE__ */ new Set([...prev, `${refillTarget.prx.id}-${refillTarget.med.name}`])
+    );
+    setRefillTarget(null);
+    ue.success(
+      `Refill requested for ${refillTarget.med.name}. Your doctor will be notified.`
+    );
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "Prescriptions" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-5", children: PATIENT_PRESCRIPTIONS.map((prx, pi2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        "data-ocid": `patient.prescription.item.${pi2 + 1}`,
+        className: "rounded-xl border border-border bg-card overflow-hidden",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 p-5 border-b border-border bg-muted/20", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pill, { className: "w-5 h-5 text-primary" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-foreground", children: prx.doctorName }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${STATUS_COLORS$1[prx.status]}`,
+                    children: prx.status.replace("_", " ")
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-muted-foreground mt-0.5", children: [
+                prx.diagnosis,
+                " · Valid until ",
+                prx.validUntil
+              ] })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3", children: prx.medicines.map((med, mi) => {
+            const key = `${prx.id}-${med.name}`;
+            const hasRefilled = refilled.has(key);
+            return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                "data-ocid": `patient.medicine.item.${pi2 + 1}.${mi + 1}`,
+                className: "rounded-xl border border-border bg-background p-4",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground text-sm mb-1", children: med.name }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1 text-xs text-muted-foreground", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                      "Dosage:",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground", children: med.dosage })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                      "Frequency:",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground", children: med.frequency })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                      "Duration:",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground", children: med.duration })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "italic", children: med.instructions })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-3 flex items-center justify-between", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+                      med.refillsLeft,
+                      " refill",
+                      med.refillsLeft !== 1 ? "s" : "",
+                      " left"
+                    ] }),
+                    prx.status === "active" && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "button",
+                      {
+                        type: "button",
+                        "data-ocid": `patient.medicine.refill_button.${pi2 + 1}.${mi + 1}`,
+                        disabled: hasRefilled || med.refillsLeft === 0,
+                        onClick: () => setRefillTarget({ prx, med }),
+                        className: "inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border border-border bg-background hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(RefreshCw, { className: "w-3 h-3" }),
+                          hasRefilled ? "Requested" : "Refill"
+                        ]
+                      }
+                    )
+                  ] })
+                ]
+              },
+              med.name
+            );
+          }) })
+        ]
+      },
+      prx.id
+    )) }),
+    refillTarget && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "data-ocid": "patient.refill.dialog",
+        className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card rounded-2xl p-6 w-[400px] max-w-[90vw] border border-border shadow-elevation-high", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-bold font-display text-foreground mb-2", children: "Request Refill" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-muted-foreground mb-1", children: [
+            "Request a refill for",
+            " ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-foreground", children: refillTarget.med.name }),
+            "?"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-5", children: "Your prescribing doctor will be notified to approve this refill request." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "patient.refill.confirm_button",
+                onClick: confirmRefill,
+                className: "flex-1 py-2 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity",
+                children: "Request Refill"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "patient.refill.cancel_button",
+                onClick: () => setRefillTarget(null),
+                className: "flex-1 py-2 rounded-xl border border-border bg-background text-foreground text-sm font-semibold hover:bg-muted transition-colors",
+                children: "Cancel"
+              }
+            )
+          ] })
+        ] })
+      }
+    )
+  ] });
+}
+const BLOOD_GROUPS = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+function PatientProfile() {
+  const [isEditing, setIsEditing] = reactExports.useState(false);
+  const [form, setForm] = reactExports.useState(MOCK_PATIENT_PROFILE);
+  const [saved, setSaved] = reactExports.useState(MOCK_PATIENT_PROFILE);
+  const handleChange = (field, value) => {
+    setForm((prev) => ({ ...prev, [field]: value }));
+  };
+  const handleSave = () => {
+    setSaved(form);
+    setIsEditing(false);
+    ue.success("Profile updated successfully.");
+  };
+  const handleCancel = () => {
+    setForm(saved);
+    setIsEditing(false);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "My Profile" }),
+      !isEditing ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "button",
+        {
+          type: "button",
+          "data-ocid": "patient.profile.edit_button",
+          onClick: () => setIsEditing(true),
+          className: "inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium border border-border bg-background hover:bg-muted transition-colors",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(PenLine, { className: "w-4 h-4" }),
+            "Edit Profile"
+          ]
+        }
+      ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "patient.profile.cancel_button",
+            onClick: handleCancel,
+            className: "inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium border border-border bg-background hover:bg-muted transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4" }),
+              "Cancel"
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "patient.profile.save_button",
+            onClick: handleSave,
+            className: "inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:opacity-90 transition-opacity",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Save, { className: "w-4 h-4" }),
+              "Save Changes"
+            ]
+          }
+        )
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-5 p-5 rounded-2xl border border-border bg-card", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(User, { className: "w-8 h-8 text-primary" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-bold text-xl text-foreground", children: saved.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm text-muted-foreground", children: [
+          "Patient ID: ",
+          saved.patientId
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm text-muted-foreground", children: saved.insurance })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-border bg-card p-6 grid sm:grid-cols-2 gap-5", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "text-sm font-medium text-foreground", htmlFor: "name", children: "Full Name" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "name",
+            "data-ocid": "patient.profile.name_input",
+            type: "text",
+            value: form.name,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("name", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "label",
+          {
+            className: "text-sm font-medium text-foreground",
+            htmlFor: "email",
+            children: "Email"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "email",
+            "data-ocid": "patient.profile.email_input",
+            type: "email",
+            value: form.email,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("email", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "label",
+          {
+            className: "text-sm font-medium text-foreground",
+            htmlFor: "phone",
+            children: "Phone"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "phone",
+            "data-ocid": "patient.profile.phone_input",
+            type: "tel",
+            value: form.phone,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("phone", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "text-sm font-medium text-foreground", htmlFor: "dob", children: "Date of Birth" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "dob",
+            "data-ocid": "patient.profile.dob_input",
+            type: "date",
+            value: form.dob,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("dob", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "label",
+          {
+            className: "text-sm font-medium text-foreground",
+            htmlFor: "bloodGroup",
+            children: "Blood Group"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "select",
+          {
+            id: "bloodGroup",
+            "data-ocid": "patient.profile.blood_group_select",
+            value: form.bloodGroup,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("bloodGroup", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40",
+            children: BLOOD_GROUPS.map((bg) => /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: bg, children: bg }, bg))
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "label",
+          {
+            className: "text-sm font-medium text-foreground",
+            htmlFor: "ecName",
+            children: "Emergency Contact Name"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "ecName",
+            "data-ocid": "patient.profile.emergency_name_input",
+            type: "text",
+            value: form.emergencyContactName,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("emergencyContactName", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "label",
+          {
+            className: "text-sm font-medium text-foreground",
+            htmlFor: "ecPhone",
+            children: "Emergency Contact Phone"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "input",
+          {
+            id: "ecPhone",
+            "data-ocid": "patient.profile.emergency_phone_input",
+            type: "tel",
+            value: form.emergencyContactPhone,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("emergencyContactPhone", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "sm:col-span-2 space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "label",
+          {
+            className: "text-sm font-medium text-foreground",
+            htmlFor: "medicalHistory",
+            children: "Medical History"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "textarea",
+          {
+            id: "medicalHistory",
+            "data-ocid": "patient.profile.medical_history_textarea",
+            rows: 3,
+            value: form.medicalHistory,
+            disabled: !isEditing,
+            onChange: (e3) => handleChange("medicalHistory", e3.target.value),
+            className: "w-full px-3 py-2 rounded-xl border border-border bg-background text-foreground text-sm disabled:opacity-60 disabled:cursor-default focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none"
+          }
+        )
+      ] })
+    ] })
+  ] });
+}
+const latestSession = THERAPY_SESSIONS[THERAPY_SESSIONS.length - 1];
+const overallProgress = latestSession.progressPercent;
+function PatientProgress() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "Therapy Progress" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-2xl border border-border bg-card p-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 mb-5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { className: "w-6 h-6 text-primary" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-lg font-bold text-foreground", children: MOCK_PATIENT_PROFILE.name }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Post-ACL Rehabilitation Programme" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-3 gap-4 mb-5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-3xl font-bold font-display text-primary", children: [
+            overallProgress,
+            "%"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground mt-0.5", children: "Overall Progress" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-3xl font-bold font-display text-foreground", children: latestSession.sessionNumber }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground mt-0.5", children: "Sessions Done" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-3xl font-bold font-display text-foreground", children: latestSession.totalSessions }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground mt-0.5", children: "Total Planned" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-3 rounded-full bg-muted overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "div",
+        {
+          className: "h-full rounded-full bg-gradient-to-r from-primary to-accent transition-all duration-500",
+          style: { width: `${overallProgress}%` }
+        }
+      ) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between mt-1", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Start" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs font-medium text-primary", children: [
+          overallProgress,
+          "% complete"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Goal" })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-base font-semibold text-foreground mb-4", children: "Session History" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: [...THERAPY_SESSIONS].reverse().map((session, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          "data-ocid": `patient.progress.session.item.${i + 1}`,
+          className: "rounded-xl border border-border bg-card p-5",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between mb-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs font-semibold text-muted-foreground uppercase tracking-wide", children: [
+                    "Session ",
+                    session.sessionNumber,
+                    " / ",
+                    session.totalSessions
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "span",
+                    {
+                      className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${session.painLevel <= 3 ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300" : session.painLevel <= 6 ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300" : "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300"}`,
+                      children: [
+                        "Pain ",
+                        session.painLevel,
+                        "/10"
+                      ]
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-semibold text-foreground mt-0.5", children: session.sessionType }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-muted-foreground", children: [
+                  session.date,
+                  " · ",
+                  session.therapistName
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-right", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-2xl font-bold text-primary", children: [
+                  session.progressPercent,
+                  "%"
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "progress" })
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-3 mb-3", children: [
+              { label: "Mobility", value: session.mobility, max: 10 },
+              { label: "Strength", value: session.strength, max: 10 },
+              {
+                label: "Pain (inv)",
+                value: 10 - session.painLevel,
+                max: 10
+              }
+            ].map((m2) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between text-xs mb-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: m2.label }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "font-medium text-foreground", children: [
+                  m2.value,
+                  "/",
+                  m2.max
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-1.5 rounded-full bg-muted", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  className: "h-full rounded-full bg-primary transition-all",
+                  style: { width: `${m2.value / m2.max * 100}%` }
+                }
+              ) })
+            ] }, m2.label)) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-3", children: session.notes }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-1.5 mb-3", children: session.exercises.map((ex) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "span",
+              {
+                className: "inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { className: "w-3 h-3" }),
+                  ex
+                ]
+              },
+              ex
+            )) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-20 rounded-xl bg-muted/30 border border-border flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "w-5 h-5 text-muted-foreground mx-auto mb-0.5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Before" })
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-20 rounded-xl bg-primary/5 border border-primary/20 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "w-5 h-5 text-primary mx-auto mb-0.5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-primary", children: "After" })
+              ] }) })
+            ] })
+          ]
+        },
+        session.id
+      )) })
+    ] })
+  ] });
+}
+const CATEGORY_MAP = {
+  All: [],
+  Lab: ["Hematology", "Biochemistry", "Microbiology"],
+  Imaging: ["Radiology"],
+  Therapy: ["Neurology", "Physiotherapy"]
+};
+const STATUS_COLORS = {
+  ready: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  processing: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  pending: "bg-muted text-muted-foreground"
+};
+function PatientReports() {
+  const [activeTab, setActiveTab] = reactExports.useState("All");
+  const [previewReport, setPreviewReport] = reactExports.useState(
+    null
+  );
+  const filtered = activeTab === "All" ? PATIENT_REPORTS : PATIENT_REPORTS.filter(
+    (r2) => CATEGORY_MAP[activeTab].includes(r2.category)
+  );
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold font-display text-foreground", children: "Medical Reports" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-1 border border-border rounded-xl bg-card p-1 w-fit", children: ["All", "Lab", "Imaging", "Therapy"].map((tab) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "button",
+      {
+        type: "button",
+        "data-ocid": `patient.reports.tab.${tab.toLowerCase()}`,
+        onClick: () => setActiveTab(tab),
+        className: `px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${activeTab === tab ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`,
+        children: tab
+      },
+      tab
+    )) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Report" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Category" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Ordered By" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Date" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Status" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-center font-semibold text-muted-foreground", children: "Actions" })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("tbody", { children: [
+        filtered.map((r2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `patient.report.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-4 h-4 text-muted-foreground shrink-0" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: r2.testName })
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: r2.category }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: r2.orderedBy }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: r2.date }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium capitalize ${STATUS_COLORS[r2.status]}`,
+                  children: r2.status
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "button",
+                  {
+                    type: "button",
+                    "data-ocid": `patient.report.preview_button.${i + 1}`,
+                    disabled: r2.status !== "ready",
+                    onClick: () => setPreviewReport(r2),
+                    className: "inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border border-border bg-background hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "w-3.5 h-3.5" }),
+                      "Preview"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "button",
+                  {
+                    type: "button",
+                    "data-ocid": `patient.report.download_button.${i + 1}`,
+                    disabled: r2.status !== "ready",
+                    onClick: () => ue.success(`Downloading ${r2.testName}...`),
+                    className: "inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border border-border bg-background hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Download, { className: "w-3.5 h-3.5" }),
+                      "Download"
+                    ]
+                  }
+                )
+              ] }) })
+            ]
+          },
+          r2.id
+        )),
+        filtered.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("tr", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "td",
+          {
+            colSpan: 6,
+            className: "px-4 py-8 text-center text-muted-foreground",
+            children: "No reports found for this category."
+          }
+        ) })
+      ] })
+    ] }) }) }),
+    previewReport && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "data-ocid": "patient.report.preview_modal",
+        className: "fixed inset-0 z-50 flex items-center justify-center bg-black/50",
+        onClick: () => setPreviewReport(null),
+        onKeyUp: (e3) => e3.key === "Escape" && setPreviewReport(null),
+        role: "presentation",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "bg-card rounded-2xl p-6 w-[520px] max-w-[90vw] border border-border shadow-elevation-high",
+            onClick: (e3) => e3.stopPropagation(),
+            onKeyUp: (e3) => e3.stopPropagation(),
+            role: "presentation",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-bold font-display text-foreground", children: previewReport.testName }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    type: "button",
+                    "data-ocid": "patient.report.preview_modal.close_button",
+                    onClick: () => setPreviewReport(null),
+                    className: "p-1.5 rounded-lg hover:bg-muted transition-colors",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-muted-foreground" })
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2 text-sm", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground w-28", children: "Category:" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: previewReport.category })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground w-28", children: "Ordered by:" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: previewReport.orderedBy })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground w-28", children: "Date:" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: previewReport.date })
+                ] }),
+                previewReport.fileSize && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground w-28", children: "File size:" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: previewReport.fileSize })
+                ] })
+              ] }),
+              previewReport.summary && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-4 p-4 rounded-xl bg-muted/40 border border-border", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-muted-foreground mb-1 uppercase tracking-wide", children: "Summary" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-foreground", children: previewReport.summary })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-4 h-32 rounded-xl bg-muted/30 border border-border flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center text-muted-foreground", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-8 h-8 mx-auto mb-1" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs", children: "PDF viewer placeholder" })
+              ] }) })
+            ]
+          }
+        )
+      }
+    )
+  ] });
+}
 const APPOINTMENT_TYPES = [
   "Physiotherapy Session",
   "Follow-up Consultation",
@@ -74521,6 +77165,654 @@ function ReceptionistDashboard() {
     ] })
   ] });
 }
+const stageColor$1 = {
+  new: "bg-muted text-muted-foreground",
+  contacted: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  qualified: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  proposal: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  negotiation: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+  converted: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  lost: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300"
+};
+const outcomeColor$1 = {
+  interested: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  callback_requested: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  not_interested: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
+  no_answer: "bg-muted text-muted-foreground",
+  left_voicemail: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  converted: "bg-primary/10 text-primary"
+};
+const activityTypeIcon = {
+  call: PhoneCall,
+  visit: Building,
+  email: Mail,
+  whatsapp: Phone,
+  meeting: Users,
+  demo: Activity
+};
+const activityTypeBg = {
+  call: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  visit: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  email: "bg-muted text-muted-foreground",
+  whatsapp: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  meeting: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  demo: "bg-primary/10 text-primary"
+};
+const partnershipStatusBg = {
+  active: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  pending: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  inactive: "bg-muted text-muted-foreground"
+};
+function GymFitnessTab() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-8", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Building, { className: "w-4 h-4 text-primary" }),
+        "Gym Partnerships"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4", children: GYM_PARTNERSHIPS.map((gym, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          "data-ocid": `sales.gym_partner.item.${i + 1}`,
+          className: "rounded-xl border border-border bg-card p-5 hover:shadow-elevation-medium transition-shadow",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between mb-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Building, { className: "w-5 h-5 text-primary" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${partnershipStatusBg[gym.status]}`,
+                  children: gym.status
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-foreground mb-0.5", children: gym.gymName }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-3", children: gym.location }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-2 text-xs", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-muted-foreground", children: "Contact" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground", children: gym.contactPerson })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-muted-foreground", children: "Type" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground capitalize", children: gym.partnershipType })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-muted-foreground", children: "Leads" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground", children: gym.leadsGenerated })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-muted-foreground", children: "Conversions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground", children: gym.conversions })
+              ] })
+            ] }),
+            gym.nextEvent && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-3 pt-3 border-t border-border", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "Next Event" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs font-medium text-foreground", children: gym.nextEvent })
+            ] })
+          ]
+        },
+        gym.id
+      )) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { className: "w-4 h-4 text-primary" }),
+        "Promotion Tracker"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card p-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ResponsiveContainer, { width: "100%", height: 240, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(LineChart, { data: PROMO_TRACKER_DATA, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CartesianGrid, { strokeDasharray: "3 3", stroke: "var(--border)" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          XAxis,
+          {
+            dataKey: "month",
+            tick: { fontSize: 12 },
+            stroke: "var(--muted-foreground)"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(YAxis, { tick: { fontSize: 12 }, stroke: "var(--muted-foreground)" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Tooltip,
+          {
+            contentStyle: {
+              background: "var(--card)",
+              border: "1px solid var(--border)",
+              borderRadius: "8px",
+              fontSize: "12px"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Legend, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Line,
+          {
+            type: "monotone",
+            dataKey: "referrals",
+            stroke: "var(--primary)",
+            strokeWidth: 2,
+            dot: { r: 4 }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Line,
+          {
+            type: "monotone",
+            dataKey: "conversions",
+            stroke: "var(--accent)",
+            strokeWidth: 2,
+            dot: { r: 4 }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Line,
+          {
+            type: "monotone",
+            dataKey: "sessions",
+            stroke: "var(--secondary)",
+            strokeWidth: 2,
+            dot: { r: 4 }
+          }
+        )
+      ] }) }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "w-4 h-4 text-primary" }),
+        "Activity Logs"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: GYM_ACTIVITY_LOGS.map((log2, i) => {
+        const Icon2 = activityTypeIcon[log2.type] ?? Activity;
+        return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            "data-ocid": `sales.gym_activity.item.${i + 1}`,
+            className: "flex items-start gap-4 p-4 rounded-xl border border-border bg-card",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-4 h-4 text-primary" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-0.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium capitalize ${activityTypeBg[log2.type]}`,
+                      children: log2.type
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+                    log2.date,
+                    " · ",
+                    log2.time
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm text-foreground", children: log2.description }),
+                log2.outcome && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-muted-foreground mt-0.5", children: [
+                  "Outcome: ",
+                  log2.outcome
+                ] }),
+                log2.linkedTo && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-muted-foreground", children: [
+                  "Linked: ",
+                  log2.linkedTo
+                ] })
+              ] })
+            ]
+          },
+          log2.id
+        );
+      }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(PhoneCall, { className: "w-4 h-4 text-primary" }),
+        "Call Logs"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Date" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Contact" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Duration" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Outcome" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: GYM_CALL_LOGS.map((c2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `sales.gym_call.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3 text-muted-foreground", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: c2.date }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs", children: c2.time })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 font-medium text-foreground", children: c2.contactName }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "inline-flex items-center gap-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-3 h-3" }),
+                c2.duration
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${outcomeColor$1[c2.outcome]}`,
+                  children: c2.outcome.replace("_", " ")
+                }
+              ) })
+            ]
+          },
+          c2.id
+        )) })
+      ] }) }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-4 h-4 text-primary" }),
+        "Gym Lead Pipeline"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Lead Name" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Stage" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-right font-semibold text-muted-foreground", children: "Value" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Next Action" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: GYM_LEADS.map((lead, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `sales.gym_lead.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground", children: lead.name }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: lead.source })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium capitalize ${stageColor$1[lead.stage]}`,
+                  children: lead.stage
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3 text-right font-medium text-foreground", children: [
+                "$",
+                (lead.value ?? 0).toLocaleString()
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-xs text-muted-foreground", children: lead.followUpDate ? `Follow up: ${lead.followUpDate}` : "Onboarding" })
+            ]
+          },
+          lead.id
+        )) })
+      ] }) }) })
+    ] })
+  ] });
+}
+const stageColor = {
+  new: "bg-muted text-muted-foreground",
+  contacted: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  qualified: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  proposal: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  negotiation: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+  converted: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  lost: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300"
+};
+const outcomeColor = {
+  interested: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  callback_requested: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  not_interested: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
+  no_answer: "bg-muted text-muted-foreground",
+  left_voicemail: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  converted: "bg-primary/10 text-primary"
+};
+const priorityColor = {
+  high: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
+  medium: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  low: "bg-muted text-muted-foreground"
+};
+const visitPhotoColors = [
+  "bg-primary/20",
+  "bg-accent/20",
+  "bg-secondary/20",
+  "bg-emerald-500/20",
+  "bg-purple-500/20",
+  "bg-amber-500/20"
+];
+function HospitalVisitTab() {
+  const [doneIds, setDoneIds] = reactExports.useState(/* @__PURE__ */ new Set(["f5"]));
+  const [lightboxIndex, setLightboxIndex] = reactExports.useState(null);
+  const markDone = (id2) => {
+    setDoneIds((prev) => /* @__PURE__ */ new Set([...prev, id2]));
+    ue.success("Follow-up marked as done");
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-8", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { className: "w-4 h-4 text-primary" }),
+        "Hospital Leads"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Lead" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Source" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Stage" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-right font-semibold text-muted-foreground", children: "Value" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Follow-up" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-center font-semibold text-muted-foreground", children: "Action" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: SALES_LEADS.map((lead, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `sales.hospital_lead.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground truncate max-w-[200px]", children: lead.name }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: lead.email })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: lead.source }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium capitalize ${stageColor[lead.stage]}`,
+                  children: lead.stage
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3 text-right font-medium text-foreground", children: [
+                "$",
+                (lead.value ?? 0).toLocaleString()
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground text-xs", children: lead.followUpDate ?? "—" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": `sales.hospital_lead.edit_button.${i + 1}`,
+                  onClick: () => ue.info(`Viewing lead: ${lead.name}`),
+                  className: "text-xs text-primary font-medium hover:underline",
+                  children: "View"
+                }
+              ) })
+            ]
+          },
+          lead.id
+        )) })
+      ] }) }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 text-primary" }),
+        "Visit History"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Date" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Location" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Contact Person" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Outcome" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Duration" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: VISIT_HISTORY.map((v2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `sales.visit.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: v2.visitDate }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground", children: v2.locationName }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: v2.purpose })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: v2.contactPerson }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "inline-flex px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300", children: [
+                v2.outcome.slice(0, 30),
+                v2.outcome.length > 30 ? "…" : ""
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: v2.duration })
+            ]
+          },
+          v2.id
+        )) })
+      ] }) }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(PhoneCall, { className: "w-4 h-4 text-primary" }),
+        "Call Logs"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-border bg-card overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "border-b border-border bg-muted/40", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Date" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Contact" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Phone" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Duration" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-4 py-3 text-left font-semibold text-muted-foreground", children: "Outcome" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: HOSPITAL_CALL_LOGS.map((c2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "tr",
+          {
+            "data-ocid": `sales.hospital_call.item.${i + 1}`,
+            className: "border-b border-border last:border-0 hover:bg-muted/20 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-4 py-3 text-muted-foreground", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: c2.date }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs", children: c2.time })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 font-medium text-foreground", children: c2.contactName }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: c2.phone }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3 text-muted-foreground", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "inline-flex items-center gap-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-3 h-3" }),
+                c2.duration
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-4 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${outcomeColor[c2.outcome]}`,
+                  children: c2.outcome.replace("_", " ")
+                }
+              ) })
+            ]
+          },
+          c2.id
+        )) })
+      ] }) }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CircleAlert, { className: "w-4 h-4 text-primary" }),
+        "Follow-up Reminders"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: FOLLOW_UP_REMINDERS.map((f2, i) => {
+        const done = doneIds.has(f2.id);
+        return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            "data-ocid": `sales.followup.item.${i + 1}`,
+            className: `flex items-start gap-4 p-4 rounded-xl border border-border bg-card transition-opacity ${done ? "opacity-50" : ""}`,
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-1", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: `inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${priorityColor[f2.priority]}`,
+                      children: f2.priority
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground uppercase tracking-wide", children: f2.type })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-medium text-foreground", children: f2.leadName }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-muted-foreground mt-0.5", children: [
+                  "Due: ",
+                  f2.dueDate,
+                  " at ",
+                  f2.dueTime
+                ] }),
+                f2.notes && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground mt-1", children: f2.notes })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": `sales.followup.mark_done.${i + 1}`,
+                  disabled: done,
+                  onClick: () => markDone(f2.id),
+                  className: "shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium border border-border bg-background hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-3.5 h-3.5" }),
+                    done ? "Done" : "Mark Done"
+                  ]
+                }
+              )
+            ]
+          },
+          f2.id
+        );
+      }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Camera, { className: "w-4 h-4 text-primary" }),
+        "Visit Photos"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-3", children: visitPhotoColors.map((bg, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "button",
+        {
+          type: "button",
+          "data-ocid": `sales.visit_photo.item.${i + 1}`,
+          onClick: () => setLightboxIndex(i),
+          className: `${bg} rounded-xl aspect-video flex flex-col items-center justify-center border border-border hover:scale-[1.03] transition-transform cursor-pointer`,
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Camera, { className: "w-6 h-6 text-muted-foreground mb-1" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+              "Visit Photo ",
+              i + 1
+            ] })
+          ]
+        },
+        bg
+      )) })
+    ] }),
+    lightboxIndex !== null && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "data-ocid": "sales.photo_lightbox.dialog",
+        className: "fixed inset-0 z-50 flex items-center justify-center bg-black/70",
+        onClick: () => setLightboxIndex(null),
+        onKeyUp: (e3) => e3.key === "Escape" && setLightboxIndex(null),
+        role: "presentation",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "relative bg-card rounded-2xl p-6 w-[480px] max-w-[90vw]",
+            onClick: (e3) => e3.stopPropagation(),
+            onKeyUp: (e3) => e3.stopPropagation(),
+            role: "presentation",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": "sales.photo_lightbox.close_button",
+                  onClick: () => setLightboxIndex(null),
+                  className: "absolute top-3 right-3 p-1.5 rounded-lg hover:bg-muted transition-colors",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4 text-muted-foreground" })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: `${visitPhotoColors[lightboxIndex]} rounded-xl aspect-video flex flex-col items-center justify-center`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Camera, { className: "w-10 h-10 text-muted-foreground mb-2" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground", children: [
+                      "Visit Photo ",
+                      lightboxIndex + 1
+                    ] })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-xs text-center text-muted-foreground", children: "Actual visit photos will appear here once uploaded via the mobile app." })
+            ]
+          }
+        )
+      }
+    )
+  ] });
+}
+function SalesDashboard() {
+  const [activeTab, setActiveTab] = reactExports.useState("hospital");
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "Sales Dashboard",
+        subtitle: "Track leads, visits, and outreach performance across all channels."
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatCard,
+        {
+          icon: Users,
+          title: "Leads This Week",
+          value: SALES_STATS.leadsThisWeek,
+          trend: SALES_STATS.leadsGrowth,
+          trendLabel: "vs last week",
+          "data-ocid": "sales.stat.leads"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatCard,
+        {
+          icon: Briefcase,
+          title: "Visits Completed",
+          value: SALES_STATS.visitsCompleted,
+          trend: SALES_STATS.visitsGrowth,
+          trendLabel: "vs last week",
+          "data-ocid": "sales.stat.visits"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatCard,
+        {
+          icon: TrendingUp,
+          title: "Conversion Rate",
+          value: `${SALES_STATS.conversionRate}%`,
+          trend: SALES_STATS.conversionGrowth,
+          trendLabel: "vs last week",
+          "data-ocid": "sales.stat.conversion"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatCard,
+        {
+          icon: Phone,
+          title: "Avg Call Duration",
+          value: SALES_STATS.avgCallDuration,
+          "data-ocid": "sales.stat.call_duration"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-border bg-card p-1 inline-flex gap-1", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "button",
+        {
+          type: "button",
+          "data-ocid": "sales.tab.hospital",
+          onClick: () => setActiveTab("hospital"),
+          className: `px-5 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === "hospital" ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`,
+          children: "🏥 Hospital Visit Executive"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "button",
+        {
+          type: "button",
+          "data-ocid": "sales.tab.gym",
+          onClick: () => setActiveTab("gym"),
+          className: `px-5 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === "gym" ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`,
+          children: "🏋️ Gym/Fitness Outreach"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: activeTab === "hospital" ? /* @__PURE__ */ jsxRuntimeExports.jsx(HospitalVisitTab, {}) : /* @__PURE__ */ jsxRuntimeExports.jsx(GymFitnessTab, {}) })
+  ] });
+}
 const rootRoute = createRootRoute();
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -74628,6 +77920,63 @@ const receptionistBillingRoute = createRoute({
   path: "/billing",
   component: Billing
 });
+const salesLayoutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/sales",
+  beforeLoad: requireAuth,
+  component: Layout
+});
+const salesIndexRoute = createRoute({
+  getParentRoute: () => salesLayoutRoute,
+  path: "/",
+  component: SalesDashboard
+});
+const patientLayoutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/patient",
+  beforeLoad: requireAuth,
+  component: Layout
+});
+const patientIndexRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/",
+  component: PatientDashboard
+});
+const patientAppointmentsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/appointments",
+  component: PatientAppointments
+});
+const patientReportsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/reports",
+  component: PatientReports
+});
+const patientPrescriptionsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/prescriptions",
+  component: PatientPrescriptions
+});
+const patientNotificationsRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/notifications",
+  component: PatientNotifications
+});
+const patientProgressRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/progress",
+  component: PatientProgress
+});
+const patientBillingRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/billing",
+  component: PatientBilling
+});
+const patientProfileRoute = createRoute({
+  getParentRoute: () => patientLayoutRoute,
+  path: "/profile",
+  component: PatientProfile
+});
 const routeTree = rootRoute.addChildren([
   indexRoute,
   loginRoute,
@@ -74650,6 +77999,17 @@ const routeTree = rootRoute.addChildren([
     receptionistAppointmentsRoute,
     receptionistQueueRoute,
     receptionistBillingRoute
+  ]),
+  salesLayoutRoute.addChildren([salesIndexRoute]),
+  patientLayoutRoute.addChildren([
+    patientIndexRoute,
+    patientAppointmentsRoute,
+    patientReportsRoute,
+    patientPrescriptionsRoute,
+    patientNotificationsRoute,
+    patientProgressRoute,
+    patientBillingRoute,
+    patientProfileRoute
   ])
 ]);
 const router = createRouter({ routeTree });

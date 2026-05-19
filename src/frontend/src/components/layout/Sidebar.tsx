@@ -6,18 +6,25 @@ import { Link, useLocation } from "@tanstack/react-router";
 import {
   Activity,
   Bell,
+  Building2,
   Calendar,
   ChevronLeft,
   ChevronRight,
   ClipboardCheck,
   ClipboardList,
   CreditCard,
+  Dumbbell,
   FileText,
   FlaskConical,
+  HeartPulse,
   LayoutDashboard,
+  MapPin,
+  PhoneCall,
   Pill,
+  Receipt,
   Settings,
   TrendingUp,
+  User,
   UserCog,
   Users,
 } from "lucide-react";
@@ -61,18 +68,42 @@ const NAV_ITEMS: Record<UserRole, NavItem[]> = {
     },
     { icon: CreditCard, label: "Billing", href: "/receptionist/billing" },
   ],
+  sales: [
+    { icon: LayoutDashboard, label: "Dashboard", href: "/sales" },
+    { icon: Building2, label: "Hospital Visits", href: "/sales" },
+    { icon: Dumbbell, label: "Gym Outreach", href: "/sales" },
+    { icon: PhoneCall, label: "Call Logs", href: "/sales" },
+    { icon: MapPin, label: "Visit History", href: "/sales" },
+    { icon: FileText, label: "Lead Pipeline", href: "/sales" },
+  ],
+  patient: [
+    { icon: LayoutDashboard, label: "Dashboard", href: "/patient" },
+    { icon: Calendar, label: "Appointments", href: "/patient/appointments" },
+    { icon: FlaskConical, label: "My Reports", href: "/patient/reports" },
+    { icon: Pill, label: "Prescriptions", href: "/patient/prescriptions" },
+    { icon: Bell, label: "Notifications", href: "/patient/notifications" },
+    { icon: HeartPulse, label: "My Progress", href: "/patient/progress" },
+    { icon: Receipt, label: "Billing", href: "/patient/billing" },
+    { icon: User, label: "My Profile", href: "/patient/profile" },
+  ],
 };
 
 const ROLE_LABELS: Record<UserRole, string> = {
   super_admin: "Super Admin",
   doctor: "Doctor",
   receptionist: "Receptionist",
+  sales: "Sales Executive",
+  patient: "Patient",
 };
 
 const ROLE_COLORS: Record<UserRole, string> = {
   super_admin: "bg-accent/20 text-accent border border-accent/30",
   doctor: "bg-primary/20 text-primary border border-primary/30",
   receptionist: "bg-secondary/20 text-secondary border border-secondary/30",
+  sales:
+    "bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30",
+  patient:
+    "bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/30",
 };
 
 interface SidebarProps {

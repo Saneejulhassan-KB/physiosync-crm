@@ -3,7 +3,9 @@ import type { UserRole } from "@/types";
 import { useNavigate } from "@tanstack/react-router";
 import {
   Activity,
+  Briefcase,
   ClipboardList,
+  HeartHandshake,
   ShieldCheck,
   Stethoscope,
 } from "lucide-react";
@@ -56,6 +58,32 @@ const ROLES: Array<{
     borderColor: "border-secondary/30 hover:border-secondary/60",
     redirectTo: "/receptionist",
   },
+  {
+    role: "sales",
+    icon: Briefcase,
+    title: "Sales Executive",
+    subtitle: "Sales CRM Portal",
+    description:
+      "Hospital visit tracking, gym outreach, lead management, call logs, and conversion analytics.",
+    color: "text-orange-600 dark:text-orange-400",
+    bgColor: "bg-orange-100 dark:bg-orange-900/30",
+    borderColor:
+      "border-orange-300/50 hover:border-orange-500/70 dark:border-orange-700/50",
+    redirectTo: "/sales",
+  },
+  {
+    role: "patient",
+    icon: HeartHandshake,
+    title: "Patient Portal",
+    subtitle: "My Health Dashboard",
+    description:
+      "View appointments, reports, prescriptions, therapy progress, billing history, and notifications.",
+    color: "text-teal-600 dark:text-teal-400",
+    bgColor: "bg-teal-100 dark:bg-teal-900/30",
+    borderColor:
+      "border-teal-300/50 hover:border-teal-500/70 dark:border-teal-700/50",
+    redirectTo: "/patient",
+  },
 ];
 
 export default function Login() {
@@ -102,7 +130,7 @@ export default function Login() {
         </motion.div>
 
         {/* Role cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {ROLES.map((r, i) => (
             <motion.button
               key={r.role}
