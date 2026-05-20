@@ -39,15 +39,7 @@ export function Layout() {
             <Outlet />
           </div>
           <footer className="mt-auto py-3 px-6 text-xs text-muted-foreground border-t border-border/50 text-center">
-            © {new Date().getFullYear()}. Built with love using{" "}
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-foreground transition-colors"
-            >
-              caffeine.ai
-            </a>
+            © {new Date().getFullYear()}. Built with love
           </footer>
         </main>
       </div>
