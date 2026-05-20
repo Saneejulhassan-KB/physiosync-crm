@@ -5,6 +5,7 @@ import type { UserRole } from "@/types";
 import { Link, useLocation } from "@tanstack/react-router";
 import {
   Activity,
+  BarChart2,
   Bell,
   Building2,
   Calendar,
@@ -14,15 +15,15 @@ import {
   ClipboardList,
   CreditCard,
   Dumbbell,
-  FileText,
   FlaskConical,
   HeartPulse,
   LayoutDashboard,
-  MapPin,
+  Lock,
   PhoneCall,
   Pill,
   Receipt,
   Settings,
+  Target,
   TrendingUp,
   User,
   UserCog,
@@ -36,13 +37,50 @@ interface NavItem {
   href: string;
 }
 
+interface NavSection {
+  label: string;
+  items: NavItem[];
+}
+
+const ADMIN_SECTIONS: NavSection[] = [
+  {
+    label: "Overview",
+    items: [
+      { icon: LayoutDashboard, label: "Dashboard", href: "/admin" },
+      { icon: TrendingUp, label: "Analytics", href: "/admin/analytics" },
+      { icon: ClipboardCheck, label: "Audit Logs", href: "/admin/audit-logs" },
+    ],
+  },
+  {
+    label: "Management",
+    items: [
+      { icon: UserCog, label: "Staff", href: "/admin/staff" },
+      { icon: Users, label: "Patients", href: "/admin/patients" },
+      { icon: PhoneCall, label: "Reception", href: "/admin/reception" },
+      { icon: BarChart2, label: "Sales Management", href: "/admin/sales-mgmt" },
+      {
+        icon: FlaskConical,
+        label: "Lab & Pharmacy",
+        href: "/admin/lab-pharmacy",
+      },
+    ],
+  },
+  {
+    label: "CRM",
+    items: [{ icon: Target, label: "Leads", href: "/admin/leads" }],
+  },
+  {
+    label: "System",
+    items: [
+      { icon: Lock, label: "Permissions", href: "/admin/permissions" },
+      { icon: Settings, label: "Settings", href: "/admin/settings" },
+    ],
+  },
+];
+
 const NAV_ITEMS: Record<UserRole, NavItem[]> = {
-  super_admin: [
-    { icon: LayoutDashboard, label: "Dashboard", href: "/admin" },
-    { icon: TrendingUp, label: "Analytics", href: "/admin/analytics" },
-    { icon: UserCog, label: "Staff Management", href: "/admin/staff" },
-    { icon: ClipboardCheck, label: "Audit Logs", href: "/admin/audit-logs" },
-  ],
+  super_admin: [],
+  // super_admin uses ADMIN_SECTIONS instead
   doctor: [
     { icon: LayoutDashboard, label: "Dashboard", href: "/doctor" },
     { icon: Users, label: "My Patients", href: "/doctor/patients" },
@@ -118,6 +156,55 @@ export function Sidebar({ onClose }: SidebarProps) {
 
   const role = currentUser?.role ?? "receptionist";
   const items = NAV_ITEMS[role];
+  const isAdmin = role === "super_admin";
+  const ROOT_HREFS = [
+    "/admin",
+    "/doctor",
+    "/receptionist",
+    "/sales",
+    "/patient",
+  ];
+
+  const renderNavItem = (item: NavItem) => {
+    const isActive =
+      location.pathname === item.href ||
+      (!ROOT_HREFS.includes(item.href) &&
+        location.pathname.startsWith(item.href));
+    return (
+      <Link
+        key={item.href}
+        to={item.href}
+        onClick={onClose}
+        data-ocid={`sidebar.${item.label.toLowerCase().replace(/\s+/g, "_")}_link`}
+        className={cn(
+          "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 group relative",
+          isActive
+            ? "bg-sidebar-primary text-sidebar-primary-foreground shadow-sm"
+            : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
+        )}
+      >
+        <item.icon className="w-5 h-5 shrink-0" />
+        <AnimatePresence mode="wait">
+          {!sidebarCollapsed && (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.1 }}
+              className="text-sm font-medium whitespace-nowrap"
+            >
+              {item.label}
+            </motion.span>
+          )}
+        </AnimatePresence>
+        {sidebarCollapsed && (
+          <div className="absolute left-14 bg-popover text-popover-foreground text-xs px-2 py-1 rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-elevation-medium z-50">
+            {item.label}
+          </div>
+        )}
+      </Link>
+    );
+  };
 
   return (
     <motion.aside
@@ -146,51 +233,36 @@ export function Sidebar({ onClose }: SidebarProps) {
       </div>
 
       {/* Nav items */}
-      <nav className="flex-1 py-4 px-2 space-y-1 overflow-y-auto overflow-x-hidden">
-        {items.map((item) => {
-          const isActive =
-            location.pathname === item.href ||
-            (item.href !== "/admin" &&
-              item.href !== "/doctor" &&
-              item.href !== "/receptionist" &&
-              item.href !== "/sales" &&
-              item.href !== "/patient" &&
-              location.pathname.startsWith(item.href));
-          return (
-            <Link
-              key={item.href}
-              to={item.href}
-              onClick={onClose}
-              data-ocid={`sidebar.${item.label.toLowerCase().replace(" ", "_")}_link`}
-              className={cn(
-                "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 group relative",
-                isActive
-                  ? "bg-sidebar-primary text-sidebar-primary-foreground shadow-sm"
-                  : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
-              )}
-            >
-              <item.icon className="w-5 h-5 shrink-0" />
-              <AnimatePresence mode="wait">
-                {!sidebarCollapsed && (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.1 }}
-                    className="text-sm font-medium whitespace-nowrap"
-                  >
-                    {item.label}
-                  </motion.span>
+      <nav className="flex-1 py-3 px-2 overflow-y-auto overflow-x-hidden scrollbar-thin">
+        {isAdmin ? (
+          <div className="space-y-4">
+            {ADMIN_SECTIONS.map((section) => (
+              <div key={section.label}>
+                <AnimatePresence mode="wait">
+                  {!sidebarCollapsed && (
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.1 }}
+                      className="px-3 mb-1 text-[10px] font-semibold uppercase tracking-widest text-sidebar-foreground/40 select-none"
+                    >
+                      {section.label}
+                    </motion.p>
+                  )}
+                </AnimatePresence>
+                {sidebarCollapsed && (
+                  <div className="mx-2 mb-1 border-t border-sidebar-border/50" />
                 )}
-              </AnimatePresence>
-              {sidebarCollapsed && (
-                <div className="absolute left-14 bg-popover text-popover-foreground text-xs px-2 py-1 rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-elevation-medium z-50">
-                  {item.label}
+                <div className="space-y-0.5">
+                  {section.items.map(renderNavItem)}
                 </div>
-              )}
-            </Link>
-          );
-        })}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="space-y-1">{items.map(renderNavItem)}</div>
+        )}
       </nav>
 
       {/* User info */}

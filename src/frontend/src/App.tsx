@@ -1,6 +1,13 @@
 import { Layout } from "@/components/layout/Layout";
 import Login from "@/pages/Login";
 import AdminDashboard from "@/pages/admin/AdminDashboard";
+import AdminLabPharmacy from "@/pages/admin/AdminLabPharmacy";
+import AdminLeads from "@/pages/admin/AdminLeads";
+import AdminPatients from "@/pages/admin/AdminPatients";
+import AdminPermissions from "@/pages/admin/AdminPermissions";
+import AdminReception from "@/pages/admin/AdminReception";
+import AdminSalesManagement from "@/pages/admin/AdminSalesManagement";
+import AdminSettings from "@/pages/admin/AdminSettings";
 import Analytics from "@/pages/admin/Analytics";
 import AuditLogs from "@/pages/admin/AuditLogs";
 import StaffManagement from "@/pages/admin/StaffManagement";
@@ -93,6 +100,48 @@ const adminAuditLogsRoute = createRoute({
   getParentRoute: () => adminLayoutRoute,
   path: "/audit-logs",
   component: AuditLogs,
+});
+
+const adminPatientsRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/patients",
+  component: AdminPatients,
+});
+
+const adminLeadsRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/leads",
+  component: AdminLeads,
+});
+
+const adminPermissionsRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/permissions",
+  component: AdminPermissions,
+});
+
+const adminSettingsRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/settings",
+  component: AdminSettings,
+});
+
+const adminReceptionRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/reception",
+  component: AdminReception,
+});
+
+const adminSalesMgmtRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/sales-mgmt",
+  component: AdminSalesManagement,
+});
+
+const adminLabPharmacyRoute = createRoute({
+  getParentRoute: () => adminLayoutRoute,
+  path: "/lab-pharmacy",
+  component: AdminLabPharmacy,
 });
 
 // /doctor — Layout wrapper
@@ -262,6 +311,13 @@ const routeTree = rootRoute.addChildren([
     adminStaffRoute,
     adminAnalyticsRoute,
     adminAuditLogsRoute,
+    adminPatientsRoute,
+    adminLeadsRoute,
+    adminPermissionsRoute,
+    adminSettingsRoute,
+    adminReceptionRoute,
+    adminSalesMgmtRoute,
+    adminLabPharmacyRoute,
   ]),
   doctorLayoutRoute.addChildren([
     doctorIndexRoute,

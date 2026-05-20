@@ -1213,3 +1213,1009 @@ export const MOCK_PATIENT_ACTIVITIES: PatientActivity[] = [
     by: "Dr. James Reeves",
   },
 ];
+
+// ─── NEW TYPES ─────────────────────────────────────────────────────────────────
+
+export type LeadSource =
+  | "sales_person"
+  | "social_media_facebook"
+  | "social_media_instagram"
+  | "manual_entry"
+  | "walk_in"
+  | "referral"
+  | "other";
+
+export type LeadStatus = "new" | "contacted" | "converted" | "rejected";
+
+export interface Lead {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  status: LeadStatus;
+  source: LeadSource;
+  assignedTo: string;
+  department: "PMR" | "General";
+  createdAt: string;
+  notes: string;
+}
+
+export type RoleName =
+  | "super_admin"
+  | "doctor"
+  | "receptionist"
+  | "sales"
+  | "lab_staff"
+  | "pharmacist"
+  | "patient";
+
+export type PageKey =
+  | "dashboard"
+  | "patients"
+  | "appointments"
+  | "leads"
+  | "staff"
+  | "analytics"
+  | "billing"
+  | "pharmacy"
+  | "laboratory"
+  | "reports"
+  | "settings"
+  | "permissions"
+  | "audit_logs"
+  | "reception_mgmt"
+  | "sales_mgmt"
+  | "lab_mgmt";
+
+export type FunctionKey = "view" | "create" | "edit" | "delete";
+
+export type PagePermissions = Record<FunctionKey, boolean>;
+export type RolePermissions = Record<PageKey, PagePermissions>;
+export type PermissionsMap = Record<RoleName, RolePermissions>;
+
+export interface DepartmentStats {
+  totalStaff: number;
+  activeToday: number;
+  pendingTasks: number;
+  completedToday: number;
+  weeklyTrend: number[];
+}
+
+export interface ReceptionQueueEntry {
+  tokenNumber: number;
+  patientName: string;
+  appointmentTime: string;
+  status: "waiting" | "in_progress" | "completed";
+  doctor: string;
+}
+
+export interface SalesPerformance {
+  staffName: string;
+  leadsGenerated: number;
+  conversions: number;
+  conversionRate: number;
+  visitsMade: number;
+  callsMade: number;
+  revenue: number;
+}
+
+export interface LabReportEntry {
+  reportId: string;
+  patientName: string;
+  testType: string;
+  requestedBy: string;
+  uploadedAt: string;
+  status: "pending" | "uploaded" | "verified";
+  fileUrl: string;
+}
+
+export interface PharmacyInventoryItem {
+  medicineId: string;
+  name: string;
+  category: string;
+  stock: number;
+  minStock: number;
+  expiryDate: string;
+  supplier: string;
+  price: number;
+  status: "in_stock" | "low_stock" | "out_of_stock";
+}
+
+// ─── MOCK LEADS ────────────────────────────────────────────────────────────────
+
+export const MOCK_LEADS: Lead[] = [
+  {
+    id: "l1",
+    name: "Arjun Nair",
+    phone: "+1-617-555-3001",
+    email: "arjun.nair@gmail.com",
+    status: "new",
+    source: "social_media_facebook",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-18T09:15:00Z",
+    notes:
+      "Interested in physiotherapy for lower back pain. Saw our Facebook ad.",
+  },
+  {
+    id: "l2",
+    name: "Fatima Al-Hassan",
+    phone: "+1-617-555-3002",
+    email: "fatima.hassan@email.com",
+    status: "contacted",
+    source: "social_media_instagram",
+    assignedTo: "Diana Blake",
+    department: "PMR",
+    createdAt: "2026-05-17T11:30:00Z",
+    notes:
+      "Saw gym promo reel on Instagram. Interested in sports rehab program.",
+  },
+  {
+    id: "l3",
+    name: "Liam O'Brien",
+    phone: "+1-617-555-3003",
+    email: "liam.obrien@email.com",
+    status: "converted",
+    source: "referral",
+    assignedTo: "Marcus Reid",
+    department: "General",
+    createdAt: "2026-05-15T08:00:00Z",
+    notes:
+      "Referred by existing patient Marcus Johnson. Booked for general checkup.",
+  },
+  {
+    id: "l4",
+    name: "Preethi Subramaniam",
+    phone: "+1-617-555-3004",
+    email: "preethi.s@email.com",
+    status: "new",
+    source: "sales_person",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-20T10:00:00Z",
+    notes: "Lead from hospital visit outreach at City Hospital.",
+  },
+  {
+    id: "l5",
+    name: "Ethan Caldwell",
+    phone: "+1-617-555-3005",
+    email: "ethan.c@email.com",
+    status: "contacted",
+    source: "walk_in",
+    assignedTo: "Emily Torres",
+    department: "General",
+    createdAt: "2026-05-19T14:20:00Z",
+    notes:
+      "Walked in asking about sports injury consultation. Provided brochure.",
+  },
+  {
+    id: "l6",
+    name: "Simone Laurent",
+    phone: "+1-617-555-3006",
+    email: "simone.l@email.com",
+    status: "rejected",
+    source: "social_media_facebook",
+    assignedTo: "Diana Blake",
+    department: "PMR",
+    createdAt: "2026-05-14T09:00:00Z",
+    notes: "Out of service area. Cannot accommodate travel distance.",
+  },
+  {
+    id: "l7",
+    name: "Ravi Krishnan",
+    phone: "+1-617-555-3007",
+    email: "ravi.k@email.com",
+    status: "converted",
+    source: "sales_person",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-10T08:30:00Z",
+    notes:
+      "Gym partnership lead — FitLife gym referral. Enrolled in rehab program.",
+  },
+  {
+    id: "l8",
+    name: "Olivia Hartmann",
+    phone: "+1-617-555-3008",
+    email: "olivia.h@email.com",
+    status: "new",
+    source: "social_media_instagram",
+    assignedTo: "Diana Blake",
+    department: "General",
+    createdAt: "2026-05-20T07:45:00Z",
+    notes:
+      "Saw before/after story on Instagram. Interested in post-natal physiotherapy.",
+  },
+  {
+    id: "l9",
+    name: "James Okafor",
+    phone: "+1-617-555-3009",
+    email: "james.okafor@email.com",
+    status: "contacted",
+    source: "manual_entry",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-16T13:00:00Z",
+    notes:
+      "Entered manually after phone call inquiry. Needs cervical pain consultation.",
+  },
+  {
+    id: "l10",
+    name: "Neha Gupta",
+    phone: "+1-617-555-3010",
+    email: "neha.gupta@email.com",
+    status: "converted",
+    source: "referral",
+    assignedTo: "Emily Torres",
+    department: "General",
+    createdAt: "2026-05-12T10:00:00Z",
+    notes:
+      "Referred by Dr. Walsh from another clinic. Registered as new patient.",
+  },
+  {
+    id: "l11",
+    name: "Carlos Vega",
+    phone: "+1-617-555-3011",
+    email: "carlos.vega@email.com",
+    status: "new",
+    source: "other",
+    assignedTo: "Diana Blake",
+    department: "PMR",
+    createdAt: "2026-05-19T16:00:00Z",
+    notes: "Lead from community health fair at Copley Square.",
+  },
+  {
+    id: "l12",
+    name: "Anika Mehta",
+    phone: "+1-617-555-3012",
+    email: "anika.mehta@email.com",
+    status: "contacted",
+    source: "social_media_facebook",
+    assignedTo: "Marcus Reid",
+    department: "General",
+    createdAt: "2026-05-17T15:30:00Z",
+    notes:
+      "Responded to paid Facebook campaign. Interested in general wellness checkup.",
+  },
+  {
+    id: "l13",
+    name: "Tom Bradley",
+    phone: "+1-617-555-3013",
+    email: "tom.bradley@email.com",
+    status: "rejected",
+    source: "walk_in",
+    assignedTo: "Emily Torres",
+    department: "General",
+    createdAt: "2026-05-13T11:00:00Z",
+    notes: "Walk-in inquiry but patient requires services not offered here.",
+  },
+  {
+    id: "l14",
+    name: "Zara Hussain",
+    phone: "+1-617-555-3014",
+    email: "zara.hussain@email.com",
+    status: "converted",
+    source: "social_media_instagram",
+    assignedTo: "Diana Blake",
+    department: "PMR",
+    createdAt: "2026-05-09T09:00:00Z",
+    notes: "Instagram DM lead. Enrolled in physiotherapy for frozen shoulder.",
+  },
+  {
+    id: "l15",
+    name: "Samuel Osei",
+    phone: "+1-617-555-3015",
+    email: "samuel.osei@email.com",
+    status: "new",
+    source: "sales_person",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-20T09:00:00Z",
+    notes: "Corporate wellness program outreach at TechCorp offices.",
+  },
+  {
+    id: "l16",
+    name: "Isabella Rossi",
+    phone: "+1-617-555-3016",
+    email: "isabella.r@email.com",
+    status: "contacted",
+    source: "referral",
+    assignedTo: "Emily Torres",
+    department: "General",
+    createdAt: "2026-05-15T12:00:00Z",
+    notes:
+      "Referred by Patricia Moore. Interested in general medicine consultation.",
+  },
+  {
+    id: "l17",
+    name: "Daniel Cho",
+    phone: "+1-617-555-3017",
+    email: "daniel.cho@email.com",
+    status: "converted",
+    source: "manual_entry",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-08T08:00:00Z",
+    notes: "Manually added after email inquiry. Now registered for knee rehab.",
+  },
+  {
+    id: "l18",
+    name: "Layla Al-Farsi",
+    phone: "+1-617-555-3018",
+    email: "layla.alfarsi@email.com",
+    status: "contacted",
+    source: "social_media_facebook",
+    assignedTo: "Diana Blake",
+    department: "General",
+    createdAt: "2026-05-16T10:30:00Z",
+    notes:
+      "Facebook lead from promotional post about general health screening.",
+  },
+  {
+    id: "l19",
+    name: "Victor Petrov",
+    phone: "+1-617-555-3019",
+    email: "victor.p@email.com",
+    status: "new",
+    source: "other",
+    assignedTo: "Marcus Reid",
+    department: "PMR",
+    createdAt: "2026-05-20T08:00:00Z",
+    notes: "Referred via physio directory listing on HealthGrades website.",
+  },
+  {
+    id: "l20",
+    name: "Mei Ling",
+    phone: "+1-617-555-3020",
+    email: "mei.ling@email.com",
+    status: "converted",
+    source: "walk_in",
+    assignedTo: "Emily Torres",
+    department: "PMR",
+    createdAt: "2026-05-11T14:00:00Z",
+    notes: "Walk-in registration. Immediately booked for PMR consultation.",
+  },
+  {
+    id: "l21",
+    name: "Noah Williams",
+    phone: "+1-617-555-3021",
+    email: "noah.w@email.com",
+    status: "rejected",
+    source: "sales_person",
+    assignedTo: "Diana Blake",
+    department: "General",
+    createdAt: "2026-05-18T15:00:00Z",
+    notes: "Lead from gym outreach but patient decided not to proceed.",
+  },
+  {
+    id: "l22",
+    name: "Aisha Traoré",
+    phone: "+1-617-555-3022",
+    email: "aisha.traore@email.com",
+    status: "new",
+    source: "social_media_instagram",
+    assignedTo: "Marcus Reid",
+    department: "General",
+    createdAt: "2026-05-20T11:00:00Z",
+    notes:
+      "Instagram story inquiry about nutrition and general health consultation.",
+  },
+];
+
+// ─── MOCK PERMISSIONS ──────────────────────────────────────────────────────────
+
+const allAccess: PagePermissions = {
+  view: true,
+  create: true,
+  edit: true,
+  delete: true,
+};
+const viewOnly: PagePermissions = {
+  view: true,
+  create: false,
+  edit: false,
+  delete: false,
+};
+const noAccess: PagePermissions = {
+  view: false,
+  create: false,
+  edit: false,
+  delete: false,
+};
+const viewCreate: PagePermissions = {
+  view: true,
+  create: true,
+  edit: false,
+  delete: false,
+};
+const viewCreateEdit: PagePermissions = {
+  view: true,
+  create: true,
+  edit: true,
+  delete: false,
+};
+const viewEdit: PagePermissions = {
+  view: true,
+  create: false,
+  edit: true,
+  delete: false,
+};
+
+export const MOCK_PERMISSIONS: PermissionsMap = {
+  super_admin: {
+    dashboard: allAccess,
+    patients: allAccess,
+    appointments: allAccess,
+    leads: allAccess,
+    staff: allAccess,
+    analytics: allAccess,
+    billing: allAccess,
+    pharmacy: allAccess,
+    laboratory: allAccess,
+    reports: allAccess,
+    settings: allAccess,
+    permissions: allAccess,
+    audit_logs: allAccess,
+    reception_mgmt: allAccess,
+    sales_mgmt: allAccess,
+    lab_mgmt: allAccess,
+  },
+  doctor: {
+    dashboard: viewOnly,
+    patients: viewEdit,
+    appointments: viewCreateEdit,
+    leads: noAccess,
+    staff: viewOnly,
+    analytics: viewOnly,
+    billing: viewOnly,
+    pharmacy: viewOnly,
+    laboratory: viewCreate,
+    reports: viewOnly,
+    settings: noAccess,
+    permissions: noAccess,
+    audit_logs: noAccess,
+    reception_mgmt: noAccess,
+    sales_mgmt: noAccess,
+    lab_mgmt: noAccess,
+  },
+  receptionist: {
+    dashboard: viewOnly,
+    patients: viewCreateEdit,
+    appointments: viewCreateEdit,
+    leads: viewOnly,
+    staff: viewOnly,
+    analytics: noAccess,
+    billing: viewCreate,
+    pharmacy: noAccess,
+    laboratory: noAccess,
+    reports: viewOnly,
+    settings: noAccess,
+    permissions: noAccess,
+    audit_logs: noAccess,
+    reception_mgmt: viewEdit,
+    sales_mgmt: noAccess,
+    lab_mgmt: noAccess,
+  },
+  sales: {
+    dashboard: viewOnly,
+    patients: viewOnly,
+    appointments: viewOnly,
+    leads: viewCreateEdit,
+    staff: noAccess,
+    analytics: viewOnly,
+    billing: noAccess,
+    pharmacy: noAccess,
+    laboratory: noAccess,
+    reports: viewOnly,
+    settings: noAccess,
+    permissions: noAccess,
+    audit_logs: noAccess,
+    reception_mgmt: noAccess,
+    sales_mgmt: viewEdit,
+    lab_mgmt: noAccess,
+  },
+  lab_staff: {
+    dashboard: viewOnly,
+    patients: viewOnly,
+    appointments: viewOnly,
+    leads: noAccess,
+    staff: noAccess,
+    analytics: noAccess,
+    billing: noAccess,
+    pharmacy: noAccess,
+    laboratory: viewCreateEdit,
+    reports: viewCreate,
+    settings: noAccess,
+    permissions: noAccess,
+    audit_logs: noAccess,
+    reception_mgmt: noAccess,
+    sales_mgmt: noAccess,
+    lab_mgmt: viewEdit,
+  },
+  pharmacist: {
+    dashboard: viewOnly,
+    patients: viewOnly,
+    appointments: viewOnly,
+    leads: noAccess,
+    staff: noAccess,
+    analytics: noAccess,
+    billing: viewCreate,
+    pharmacy: viewCreateEdit,
+    laboratory: noAccess,
+    reports: viewOnly,
+    settings: noAccess,
+    permissions: noAccess,
+    audit_logs: noAccess,
+    reception_mgmt: noAccess,
+    sales_mgmt: noAccess,
+    lab_mgmt: noAccess,
+  },
+  patient: {
+    dashboard: viewOnly,
+    patients: viewOnly,
+    appointments: viewCreate,
+    leads: noAccess,
+    staff: noAccess,
+    analytics: noAccess,
+    billing: viewOnly,
+    pharmacy: noAccess,
+    laboratory: viewOnly,
+    reports: viewOnly,
+    settings: viewEdit,
+    permissions: noAccess,
+    audit_logs: noAccess,
+    reception_mgmt: noAccess,
+    sales_mgmt: noAccess,
+    lab_mgmt: noAccess,
+  },
+};
+
+// ─── MOCK DEPARTMENT STATS ─────────────────────────────────────────────────────
+
+export const MOCK_DEPARTMENT_STATS: Record<string, DepartmentStats> = {
+  reception: {
+    totalStaff: 6,
+    activeToday: 5,
+    pendingTasks: 12,
+    completedToday: 38,
+    weeklyTrend: [32, 41, 35, 48, 38, 44, 38],
+  },
+  sales: {
+    totalStaff: 4,
+    activeToday: 4,
+    pendingTasks: 18,
+    completedToday: 22,
+    weeklyTrend: [15, 18, 22, 19, 25, 21, 22],
+  },
+  laboratory: {
+    totalStaff: 5,
+    activeToday: 4,
+    pendingTasks: 7,
+    completedToday: 19,
+    weeklyTrend: [14, 17, 20, 16, 18, 22, 19],
+  },
+  pharmacy: {
+    totalStaff: 3,
+    activeToday: 3,
+    pendingTasks: 4,
+    completedToday: 31,
+    weeklyTrend: [28, 30, 25, 33, 29, 32, 31],
+  },
+};
+
+// ─── MOCK RECEPTION QUEUE ──────────────────────────────────────────────────────
+
+export const MOCK_RECEPTION_QUEUE: ReceptionQueueEntry[] = [
+  {
+    tokenNumber: 1,
+    patientName: "Marcus Johnson",
+    appointmentTime: "09:00",
+    status: "completed",
+    doctor: "Dr. James Reeves",
+  },
+  {
+    tokenNumber: 2,
+    patientName: "Linda Park",
+    appointmentTime: "09:30",
+    status: "completed",
+    doctor: "Dr. Priya Sharma",
+  },
+  {
+    tokenNumber: 3,
+    patientName: "Thomas Wright",
+    appointmentTime: "10:00",
+    status: "in_progress",
+    doctor: "Dr. Michael Chen",
+  },
+  {
+    tokenNumber: 4,
+    patientName: "Sofia Alvarez",
+    appointmentTime: "10:30",
+    status: "waiting",
+    doctor: "Dr. Aisha Khan",
+  },
+  {
+    tokenNumber: 5,
+    patientName: "David Kim",
+    appointmentTime: "11:00",
+    status: "waiting",
+    doctor: "Dr. James Reeves",
+  },
+  {
+    tokenNumber: 6,
+    patientName: "Rachel Green",
+    appointmentTime: "11:30",
+    status: "waiting",
+    doctor: "Dr. Priya Sharma",
+  },
+  {
+    tokenNumber: 7,
+    patientName: "William Harris",
+    appointmentTime: "14:00",
+    status: "waiting",
+    doctor: "Dr. Robert Walsh",
+  },
+  {
+    tokenNumber: 8,
+    patientName: "Natalie Brown",
+    appointmentTime: "14:30",
+    status: "waiting",
+    doctor: "Dr. Michael Chen",
+  },
+  {
+    tokenNumber: 9,
+    patientName: "Jennifer White",
+    appointmentTime: "15:00",
+    status: "waiting",
+    doctor: "Dr. James Reeves",
+  },
+  {
+    tokenNumber: 10,
+    patientName: "Andrew Lee",
+    appointmentTime: "15:30",
+    status: "waiting",
+    doctor: "Dr. Robert Walsh",
+  },
+];
+
+// ─── MOCK SALES PERFORMANCE ────────────────────────────────────────────────────
+
+export const MOCK_SALES_PERFORMANCE: SalesPerformance[] = [
+  {
+    staffName: "Marcus Reid",
+    leadsGenerated: 32,
+    conversions: 19,
+    conversionRate: 59.4,
+    visitsMade: 28,
+    callsMade: 74,
+    revenue: 38400,
+  },
+  {
+    staffName: "Diana Blake",
+    leadsGenerated: 27,
+    conversions: 14,
+    conversionRate: 51.9,
+    visitsMade: 21,
+    callsMade: 63,
+    revenue: 28700,
+  },
+  {
+    staffName: "Kevin Okafor",
+    leadsGenerated: 22,
+    conversions: 11,
+    conversionRate: 50.0,
+    visitsMade: 19,
+    callsMade: 58,
+    revenue: 22500,
+  },
+  {
+    staffName: "Priya Malhotra",
+    leadsGenerated: 18,
+    conversions: 8,
+    conversionRate: 44.4,
+    visitsMade: 15,
+    callsMade: 47,
+    revenue: 16800,
+  },
+  {
+    staffName: "Sam Torres",
+    leadsGenerated: 15,
+    conversions: 9,
+    conversionRate: 60.0,
+    visitsMade: 12,
+    callsMade: 40,
+    revenue: 18200,
+  },
+  {
+    staffName: "Rachel Nguyen",
+    leadsGenerated: 20,
+    conversions: 10,
+    conversionRate: 50.0,
+    visitsMade: 17,
+    callsMade: 52,
+    revenue: 20100,
+  },
+  {
+    staffName: "Ali Hassan",
+    leadsGenerated: 12,
+    conversions: 5,
+    conversionRate: 41.7,
+    visitsMade: 10,
+    callsMade: 33,
+    revenue: 10200,
+  },
+  {
+    staffName: "Claire Fontaine",
+    leadsGenerated: 25,
+    conversions: 16,
+    conversionRate: 64.0,
+    visitsMade: 23,
+    callsMade: 68,
+    revenue: 32500,
+  },
+];
+
+// ─── MOCK LAB REPORT ENTRIES (upload-centric) ─────────────────────────────────
+
+export const MOCK_LAB_REPORT_ENTRIES: LabReportEntry[] = [
+  {
+    reportId: "RPT-001",
+    patientName: "Marcus Johnson",
+    testType: "MRI Lumbar Spine",
+    requestedBy: "Dr. James Reeves",
+    uploadedAt: "2026-05-12T14:30:00Z",
+    status: "verified",
+    fileUrl: "/files/reports/rpt-001.pdf",
+  },
+  {
+    reportId: "RPT-002",
+    patientName: "Thomas Wright",
+    testType: "HbA1c Blood Panel",
+    requestedBy: "Dr. Michael Chen",
+    uploadedAt: "2026-05-09T10:00:00Z",
+    status: "verified",
+    fileUrl: "/files/reports/rpt-002.pdf",
+  },
+  {
+    reportId: "RPT-003",
+    patientName: "William Harris",
+    testType: "Cardiac Stress Test",
+    requestedBy: "Dr. Robert Walsh",
+    uploadedAt: "",
+    status: "pending",
+    fileUrl: "",
+  },
+  {
+    reportId: "RPT-004",
+    patientName: "Rachel Green",
+    testType: "X-Ray Right Knee",
+    requestedBy: "Dr. Priya Sharma",
+    uploadedAt: "2026-05-15T09:15:00Z",
+    status: "verified",
+    fileUrl: "/files/reports/rpt-004.pdf",
+  },
+  {
+    reportId: "RPT-005",
+    patientName: "Carlos Mendez",
+    testType: "Nerve Conduction Study",
+    requestedBy: "Dr. Aisha Khan",
+    uploadedAt: "",
+    status: "pending",
+    fileUrl: "",
+  },
+  {
+    reportId: "RPT-006",
+    patientName: "Patricia Moore",
+    testType: "Brain MRI with Contrast",
+    requestedBy: "Dr. Priya Sharma",
+    uploadedAt: "2026-05-18T11:00:00Z",
+    status: "verified",
+    fileUrl: "/files/reports/rpt-006.pdf",
+  },
+  {
+    reportId: "RPT-007",
+    patientName: "Sofia Alvarez",
+    testType: "CBC with Differential",
+    requestedBy: "Dr. Aisha Khan",
+    uploadedAt: "2026-05-19T08:45:00Z",
+    status: "uploaded",
+    fileUrl: "/files/reports/rpt-007.pdf",
+  },
+  {
+    reportId: "RPT-008",
+    patientName: "David Kim",
+    testType: "Cervical Spine X-Ray",
+    requestedBy: "Dr. James Reeves",
+    uploadedAt: "2026-05-17T15:30:00Z",
+    status: "uploaded",
+    fileUrl: "/files/reports/rpt-008.pdf",
+  },
+  {
+    reportId: "RPT-009",
+    patientName: "Natalie Brown",
+    testType: "Ultrasound Right Foot",
+    requestedBy: "Dr. Michael Chen",
+    uploadedAt: "",
+    status: "pending",
+    fileUrl: "",
+  },
+  {
+    reportId: "RPT-010",
+    patientName: "Jennifer White",
+    testType: "Fibromyalgia Panel",
+    requestedBy: "Dr. James Reeves",
+    uploadedAt: "2026-05-20T09:00:00Z",
+    status: "uploaded",
+    fileUrl: "/files/reports/rpt-010.pdf",
+  },
+];
+
+// ─── MOCK PHARMACY INVENTORY ──────────────────────────────────────────────────
+
+export const MOCK_PHARMACY_INVENTORY: PharmacyInventoryItem[] = [
+  {
+    medicineId: "MED-001",
+    name: "Diclofenac Sodium 75mg",
+    category: "NSAID / Analgesic",
+    stock: 240,
+    minStock: 50,
+    expiryDate: "2027-08-01",
+    supplier: "Cipla Ltd.",
+    price: 0.85,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-002",
+    name: "Methocarbamol 750mg",
+    category: "Muscle Relaxant",
+    stock: 180,
+    minStock: 40,
+    expiryDate: "2027-03-15",
+    supplier: "Sun Pharma",
+    price: 1.2,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-003",
+    name: "Pantoprazole 40mg",
+    category: "PPI / GI",
+    stock: 320,
+    minStock: 60,
+    expiryDate: "2027-11-30",
+    supplier: "Lupin Pharma",
+    price: 0.65,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-004",
+    name: "Sumatriptan 50mg",
+    category: "Triptan / Migraine",
+    stock: 38,
+    minStock: 30,
+    expiryDate: "2027-06-01",
+    supplier: "GSK Pharma",
+    price: 4.5,
+    status: "low_stock",
+  },
+  {
+    medicineId: "MED-005",
+    name: "Topiramate 25mg",
+    category: "Anticonvulsant",
+    stock: 150,
+    minStock: 30,
+    expiryDate: "2027-09-15",
+    supplier: "Dr. Reddy's",
+    price: 1.8,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-006",
+    name: "Metformin 1000mg",
+    category: "Antidiabetic",
+    stock: 450,
+    minStock: 100,
+    expiryDate: "2027-12-01",
+    supplier: "Cipla Ltd.",
+    price: 0.45,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-007",
+    name: "Empagliflozin 10mg",
+    category: "SGLT2 Inhibitor",
+    stock: 22,
+    minStock: 25,
+    expiryDate: "2027-04-30",
+    supplier: "Boehringer Ingelheim",
+    price: 6.2,
+    status: "low_stock",
+  },
+  {
+    medicineId: "MED-008",
+    name: "Amlodipine 5mg",
+    category: "Calcium Channel Blocker",
+    stock: 0,
+    minStock: 50,
+    expiryDate: "2027-07-15",
+    supplier: "Lupin Pharma",
+    price: 0.3,
+    status: "out_of_stock",
+  },
+  {
+    medicineId: "MED-009",
+    name: "Lisinopril 10mg",
+    category: "ACE Inhibitor",
+    stock: 210,
+    minStock: 50,
+    expiryDate: "2027-10-01",
+    supplier: "Sun Pharma",
+    price: 0.5,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-010",
+    name: "Ibuprofen 400mg",
+    category: "NSAID / Analgesic",
+    stock: 18,
+    minStock: 80,
+    expiryDate: "2026-09-30",
+    supplier: "Cipla Ltd.",
+    price: 0.4,
+    status: "low_stock",
+  },
+  {
+    medicineId: "MED-011",
+    name: "Gabapentin 300mg",
+    category: "Neuropathic Pain",
+    stock: 165,
+    minStock: 40,
+    expiryDate: "2027-05-15",
+    supplier: "Pfizer Ltd.",
+    price: 1.1,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-012",
+    name: "Duloxetine 60mg",
+    category: "SNRI / Antidepressant",
+    stock: 90,
+    minStock: 30,
+    expiryDate: "2027-08-31",
+    supplier: "Eli Lilly",
+    price: 3.75,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-013",
+    name: "Tramadol 50mg",
+    category: "Opioid Analgesic",
+    stock: 0,
+    minStock: 20,
+    expiryDate: "2026-12-31",
+    supplier: "Dr. Reddy's",
+    price: 1.6,
+    status: "out_of_stock",
+  },
+  {
+    medicineId: "MED-014",
+    name: "Methylcobalamin 500mcg",
+    category: "Vitamin B12",
+    stock: 380,
+    minStock: 60,
+    expiryDate: "2028-01-01",
+    supplier: "Lupin Pharma",
+    price: 0.55,
+    status: "in_stock",
+  },
+  {
+    medicineId: "MED-015",
+    name: "Calcium + Vitamin D3",
+    category: "Supplement",
+    stock: 275,
+    minStock: 50,
+    expiryDate: "2027-11-15",
+    supplier: "Abbott India",
+    price: 0.9,
+    status: "in_stock",
+  },
+];
